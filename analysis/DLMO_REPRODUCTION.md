@@ -27,17 +27,17 @@ The workflow .github/workflows/dlmo-reference.yml performs these steps using R 4
 
 The R runner saves each completed profile separately and processes independent curves on up to four available CPU cores. It uses the pinned dlmoR hockey-stick implementation, threshold 2.3 pg/mL, and fine-grid estimation. This is baseline extraction from observed melatonin curves. It retains every profile, including estimation errors and warnings.
 
-## Executed preliminary pilot
+## Executed real-data pilots
 
 The corrected single-profile coarse-grid pilot completed successfully on 2026-10-11: https://github.com/lissandrakruse/SpaceSleepTwin/actions/runs/38149555486. Its actual output and R session are in dlmo_pilot/. For first_Visit_1_PB_1.csv, the estimate is 1.55 hours on the imported analysis axis, with threshold 2.3 pg/mL. The displayed 01:33:00 is not established as original participant-local clock time. This pilot demonstrates execution on one real curve; it is not full-sample reproduction or validation of a biological prediction.
 
-A prior 120-profile coarse batch exported no successful estimates: 106 errors arose when the pinned package called scale_y_continuous without ggplot2 attached; 14 other errors require method/profile review. The runner now attaches ggplot2 as the author's analysis scripts do. Failure records are retained in dlmo_attempts/. Do not label all these curves biologically invalid or claim a reproduced 112-profile benchmark. Fine-grid extraction is a separate verification step.
+A prior 120-profile coarse batch exported no successful estimates: 106 errors arose when the pinned package called scale_y_continuous without ggplot2 attached; 14 other errors require method/profile review. The runner now attaches ggplot2 as the author's analysis scripts do. Failure records are retained in dlmo_attempts/. Do not label all these curves biologically invalid or claim a reproduced 112-profile benchmark. A separate fine-grid pilot also completed successfully: https://github.com/lissandrakruse/SpaceSleepTwin/actions/runs/38149789376. Its downloaded output and actual R session are in dlmo_fine_pilot/. The same real profile yielded 1.49 hours on its imported analysis axis, with no errors or warnings. This differs from the preliminary coarse estimate by 3.6 minutes; that is a search-resolution comparison on one curve, not predictive accuracy or agreement with independent ground truth. The fine pilot uses the article's package source, R version, and lockfile, with single-thread OpenBLAS/OMP. Full-cohort extraction and the published reference-executable comparison have not been reproduced.
 
 The original [Blume experiment import](blume_experiment/README.md) also verifies the provenance of all 96 Blume curves and safely aligns 44 observed phase/sleep visit records, keeping missing values and source conflicts explicit.
 
 ## Interpretation and outstanding work
 
-Import success is verified locally; one coarse-grid extraction pilot is verified from its successful workflow and downloaded output. Expanded and fine-grid outputs require their own outcome checks.
+Import success is verified locally; coarse- and fine-grid extraction pilots on one real curve are verified from its successful workflow and downloaded output. Expanded and fine-grid outputs require their own outcome checks.
 
 Profile timestamps are analysis coordinates. In particular, some Blume files use a common date and start near midnight. Do not treat those values as original participant-local DLMO clock times without examining timestamp transformations in the original source studies. Parsing using UTC does not resolve this provenance question.
 
