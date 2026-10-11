@@ -1,0 +1,109 @@
+{
+  "status": "import and alignment audit only; no validated predictions",
+  "source": "https://github.com/altugdidikoglu/light-sleep-inreallife",
+  "upstream_commit": "ef570332cd6bd04cafea40a66f5a70e6f2206505",
+  "tables": {
+    "light_daily_data": {
+      "rows": 542,
+      "participants": 89,
+      "columns": [
+        "Id",
+        "yday4",
+        "TAT250",
+        "time1000last",
+        "time1last",
+        "presleep3hr",
+        "presleep3hrCat",
+        "sleepPeriodave"
+      ]
+    },
+    "sleep_diary": {
+      "rows": 528,
+      "participants": 88,
+      "columns": [
+        "Id",
+        "datetimeGobed",
+        "datetimeSleep",
+        "datetimeWake",
+        "gobedTime",
+        "hoursToSleep",
+        "sleepTime",
+        "wakeTime",
+        "sleepDuration",
+        "sleepEfficiency",
+        "yday",
+        "yday4"
+      ]
+    },
+    "sleep_fitbit": {
+      "rows": 547,
+      "participants": 89,
+      "columns": [
+        "Id",
+        "startTime",
+        "endTime",
+        "sleepTime",
+        "wakeTime",
+        "sleepDuration",
+        "deepCount",
+        "deepMinute",
+        "deepPerc",
+        "remCount",
+        "remMinute",
+        "remPerc",
+        "lightCount",
+        "lightMinute",
+        "lightPerc",
+        "wakeCount",
+        "wakeMinute",
+        "sleepEfficiency",
+        "deepCons",
+        "remLatency",
+        "deepRatiodiff",
+        "yday",
+        "yday4"
+      ]
+    },
+    "baseline_data": {
+      "rows": 89,
+      "participants": 89,
+      "columns": [
+        "subj",
+        "age",
+        "sex",
+        "caffeine_base",
+        "smoke_base",
+        "alcohol_base",
+        "employ",
+        "health",
+        "sleep_disorder",
+        "neuropsych_disorder",
+        "brain_disorder",
+        "eye_disorder",
+        "MSFsc",
+        "PROMIS_SLP_DIST",
+        "PROMIS_SLP_IMP",
+        "psqi",
+        "Id"
+      ]
+    }
+  },
+  "files_sha256": {
+    "light_daily_data.RData": "d7bce0f4425067880432fe4acdbb031363890a1bfe19da8e90dc0ad6db8cd9c4",
+    "sleep_diary.RData": "449085c3117b5b1ed9cc56b7f2dc02d8191dd898fa598952e93424fb46194176",
+    "sleep_fitbit.RData": "d6ca44f158ef162e13394bcbc16246523bb190037fa4a262f256e4209a8bd095",
+    "baseline_data.RData": "cf485c46e9db456693f7fb3ddccd1ac54315d886009ea318aae10395f800ef5d"
+  },
+  "warnings": [
+    "TAT250 is minutes above 250 melanopic lux, not average daylight lux.",
+    "presleep3hr uses observed Fitbit startTime; it is not a prospective bedtime feature.",
+    "Id and yday4 reproduce the upstream join; verify dates and timezone before new analyses.",
+    "Consumer wearable staging is not polysomnography.",
+    "Confirm reuse and redistribution terms for the exact source release.",
+    "No astronaut, DLMO or circadian-phase validation."
+  ],
+  "light_fitbit_matched_rows": 454,
+  "light_fitbit_matched_participants": 88,
+  "light_diary_matched_rows": 440,
+  "light_diary_matched_participants": 88
+}
