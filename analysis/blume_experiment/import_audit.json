@@ -1,0 +1,81 @@
+{
+  "source_doi": "10.6084/m9.figshare.23578698",
+  "source_file_id": 41362323,
+  "zip_sha256": "1a89e9ff338e7e0e36f9d01970a7b898a608bdf0f2e6d1fdd8ae2e96731a78da",
+  "license": "CC BY 4.0",
+  "article": "10.1038/s41562-023-01791-7",
+  "endpoint_dictionary_code_revision": "e9bc03f89244b7b00e1cd9ec63b3091b09d75018",
+  "participant_count": 16,
+  "sleep_visit_records": 48,
+  "phase_shift_visit_records": 46,
+  "matched_phase_sleep_visit_records": 44,
+  "visit_condition_conflicts": [
+    [
+      4,
+      2,
+      "blue_dim"
+    ],
+    [
+      4,
+      3,
+      "yellow_bright"
+    ]
+  ],
+  "unmatched_phase_visit_keys": [
+    [
+      4,
+      2,
+      "yellow_bright"
+    ],
+    [
+      4,
+      3,
+      "blue_dim"
+    ]
+  ],
+  "raw_melatonin_measurements": 1584,
+  "verified_profile_files": 96,
+  "sleep_records_by_condition": {
+    "background": 16,
+    "blue_dim": 16,
+    "yellow_bright": 16
+  },
+  "phase_records_by_condition": {
+    "background": 15,
+    "yellow_bright": 16,
+    "blue_dim": 15
+  },
+  "missing_phase_keys": [
+    [
+      2,
+      1,
+      "background"
+    ],
+    [
+      4,
+      2,
+      "blue_dim"
+    ],
+    [
+      4,
+      3,
+      "yellow_bright"
+    ],
+    [
+      5,
+      3,
+      "blue_dim"
+    ]
+  ],
+  "interpretation": [
+    "These are repeated visits of 16 people, not 48 independent participants.",
+    "The 96 Blume profile files are the same observations already counted in the dlmoR inventory; do not add them as another cohort.",
+    "Phase shift values are original study endpoints, not estimates newly produced by SpaceSleepTwin.",
+    "Positive phase shift is delay; negative is advance, in minutes (author analysis dictionary).",
+    "Sleep endpoint is latency to 10 minutes of continuous sleep, not generic diary sleep onset latency.",
+    "Photopic values describe reported stimulus settings, not daily mean exposure or melanopic EDI.",
+    "Melanopsin excitation was matched across conditions; background was constant and blue/yellow modulated.",
+    "Missing phase endpoints remain explicit. No fitting, predictive validation, or causal reanalysis has been performed.",
+    "Participant 4 has swapped blue/yellow visit labels between melatonin/phase and sleep tables; those two sleep visits are not linked to a phase endpoint pending original-record verification."
+  ]
+}
