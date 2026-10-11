@@ -1,0 +1,318 @@
+"cohort","profile","status","threshold_pg_ml","fit_axis_hours","display_time","error","warnings","search_resolution","elapsed_seconds"
+"Blume","first_Visit_1_PB_1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",26.1620705127716
+"Blume","first_Visit_1_PB_10.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",22.3733594417572
+"Blume","first_Visit_1_PB_11.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",22.3995566368103
+"Blume","first_Visit_1_PB_12.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",21.6545243263245
+"Blume","first_Visit_1_PB_13.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",22.4161171913147
+"Blume","first_Visit_1_PB_14.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",21.3292369842529
+"Blume","first_Visit_1_PB_15.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.946875333786
+"Blume","first_Visit_1_PB_16.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",26.3725485801697
+"Blume","first_Visit_1_PB_2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",20.3564901351929
+"Blume","first_Visit_1_PB_3.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",20.1905391216278
+"Blume","first_Visit_1_PB_4.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",22.7320611476898
+"Blume","first_Visit_1_PB_5.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",19.8419694900513
+"Blume","first_Visit_1_PB_6.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",21.9469237327576
+"Blume","first_Visit_1_PB_7.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",22.3923292160034
+"Blume","first_Visit_1_PB_8.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",20.7477829456329
+"Blume","first_Visit_1_PB_9.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 02:00:00, 2025-01-01 03:00:00","coarse_preliminary",24.4624936580658
+"Blume","first_Visit_2_PB_1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",22.5913922786713
+"Blume","first_Visit_2_PB_10.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00","coarse_preliminary",20.9252965450287
+"Blume","first_Visit_2_PB_11.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",20.5389835834503
+"Blume","first_Visit_2_PB_12.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.9252820014954
+"Blume","first_Visit_2_PB_13.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",21.9755234718323
+"Blume","first_Visit_2_PB_14.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",20.1121881008148
+"Blume","first_Visit_2_PB_15.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.2086029052734
+"Blume","first_Visit_2_PB_16.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",20.7704074382782
+"Blume","first_Visit_2_PB_2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",22.0834350585938
+"Blume","first_Visit_2_PB_3.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.9237062931061
+"Blume","first_Visit_2_PB_4.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",22.031308889389
+"Blume","first_Visit_2_PB_5.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:30:00, 2025-01-01 03:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00, 2025-01-01 03:30:00","coarse_preliminary",20.0959315299988
+"Blume","first_Visit_2_PB_6.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",22.5013771057129
+"Blume","first_Visit_2_PB_7.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",26.650087594986
+"Blume","first_Visit_2_PB_8.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",19.5649473667145
+"Blume","first_Visit_2_PB_9.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00, 2025-01-01 02:30:00","coarse_preliminary",22.8487994670868
+"Blume","first_Visit_3_PB_1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",23.1132936477661
+"Blume","first_Visit_3_PB_10.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01, 2025-01-01 01:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00","coarse_preliminary",22.4143526554108
+"Blume","first_Visit_3_PB_11.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00","coarse_preliminary",20.9703214168549
+"Blume","first_Visit_3_PB_12.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",20.3836748600006
+"Blume","first_Visit_3_PB_13.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",20.415271282196
+"Blume","first_Visit_3_PB_14.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01, 2025-01-01 01:00:00, 2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",21.2845544815063
+"Blume","first_Visit_3_PB_15.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01","coarse_preliminary",20.5057852268219
+"Blume","first_Visit_3_PB_16.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00","coarse_preliminary",21.7655200958252
+"Blume","first_Visit_3_PB_2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01, 2025-01-01 01:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00","coarse_preliminary",20.272082567215
+"Blume","first_Visit_3_PB_3.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",21.0501689910889
+"Blume","first_Visit_3_PB_4.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:30:00","coarse_preliminary",23.8145844936371
+"Blume","first_Visit_3_PB_5.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01, 2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00","coarse_preliminary",20.7376992702484
+"Blume","first_Visit_3_PB_6.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",19.2912411689758
+"Blume","first_Visit_3_PB_7.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 03:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 03:00:00, 2025-01-01 03:30:00","coarse_preliminary",24.4979257583618
+"Blume","first_Visit_3_PB_8.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.867002248764
+"Blume","first_Visit_3_PB_9.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",20.0996835231781
+"Blume","second_Visit_1_PB_1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",20.4936845302582
+"Blume","second_Visit_1_PB_10.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:30:00, 2025-01-01 03:00:00","coarse_preliminary",26.5335838794708
+"Blume","second_Visit_1_PB_11.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",20.6039578914642
+"Blume","second_Visit_1_PB_12.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",24.3296594619751
+"Blume","second_Visit_1_PB_13.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",21.1618356704712
+"Blume","second_Visit_1_PB_14.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",19.7545311450958
+"Blume","second_Visit_1_PB_15.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",20.3378083705902
+"Blume","second_Visit_1_PB_16.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.5448145866394
+"Blume","second_Visit_1_PB_2.csv","failed",2.3,NA,NA,"missing value where TRUE/FALSE needed","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 05:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00, 2025-01-01 03:30:00, 2025-01-01 04:00:00, 2025-01-01 04:30:00, 2025-01-01 05:00:00, 2025-01-01 05:30:00 | no non-missing arguments to min; returning Inf","coarse_preliminary",18.414210319519
+"Blume","second_Visit_1_PB_3.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",19.8148906230927
+"Blume","second_Visit_1_PB_4.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",19.8830420970917
+"Blume","second_Visit_1_PB_5.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",19.824604511261
+"Blume","second_Visit_1_PB_6.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01, 2025-01-01 01:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00","coarse_preliminary",18.9800624847412
+"Blume","second_Visit_1_PB_7.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00","coarse_preliminary",20.2654974460602
+"Blume","second_Visit_1_PB_8.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.7123327255249
+"Blume","second_Visit_1_PB_9.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00","coarse_preliminary",25.2256028652191
+"Blume","second_Visit_2_PB_1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",25.5342578887939
+"Blume","second_Visit_2_PB_10.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01, 2025-01-01 02:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00","coarse_preliminary",22.4622490406036
+"Blume","second_Visit_2_PB_11.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",21.5950014591217
+"Blume","second_Visit_2_PB_12.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",22.2035448551178
+"Blume","second_Visit_2_PB_13.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00","coarse_preliminary",21.0310289859772
+"Blume","second_Visit_2_PB_14.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",20.1132595539093
+"Blume","second_Visit_2_PB_15.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.3188972473145
+"Blume","second_Visit_2_PB_16.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",18.8764553070068
+"Blume","second_Visit_2_PB_2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",21.8341071605682
+"Blume","second_Visit_2_PB_3.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",19.0245988368988
+"Blume","second_Visit_2_PB_4.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",20.350611448288
+"Blume","second_Visit_2_PB_5.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 02:00:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00","coarse_preliminary",22.8836193084717
+"Blume","second_Visit_2_PB_6.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",22.1668436527252
+"Blume","second_Visit_2_PB_7.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:30:00, 2025-01-01 02:00:00","coarse_preliminary",22.637895822525
+"Blume","second_Visit_2_PB_8.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",18.3326256275177
+"Blume","second_Visit_2_PB_9.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:30:00","coarse_preliminary",20.9803998470306
+"Blume","second_Visit_3_PB_1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",23.4740390777588
+"Blume","second_Visit_3_PB_10.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 02:30:00, 2025-01-01 03:00:00, 2025-01-01 03:30:00","coarse_preliminary",22.5669662952423
+"Blume","second_Visit_3_PB_11.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",20.1676592826843
+"Blume","second_Visit_3_PB_12.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 02:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:30:00","coarse_preliminary",22.4261708259583
+"Blume","second_Visit_3_PB_13.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",19.4758415222168
+"Blume","second_Visit_3_PB_14.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","","coarse_preliminary",23.2324376106262
+"Blume","second_Visit_3_PB_15.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Hockey-stick time: no base part","coarse_preliminary",19.2924110889435
+"Blume","second_Visit_3_PB_16.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00","coarse_preliminary",19.4874749183655
+"Blume","second_Visit_3_PB_2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 01:00:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00, 2025-01-01 01:30:00","coarse_preliminary",20.4457180500031
+"Blume","second_Visit_3_PB_3.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",18.723691701889
+"Blume","second_Visit_3_PB_4.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 01:00:00","coarse_preliminary",20.3672142028809
+"Blume","second_Visit_3_PB_5.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:30:00, 2025-01-01 03:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 03:00:00, 2025-01-01 03:30:00, 2025-01-01 05:00:00","coarse_preliminary",24.0671136379242
+"Blume","second_Visit_3_PB_6.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 02:00:00, 2025-01-01 02:30:00","coarse_preliminary",21.7321379184723
+"Blume","second_Visit_3_PB_7.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 03:30:00 | Warning: Large slope differences found in base segment at the following timestamps:
+2025-01-01 00:30:00, 2025-01-01 01:00:00, 2025-01-01 01:30:00, 2025-01-01 02:00:00, 2025-01-01 03:30:00","coarse_preliminary",21.0361549854279
+"Blume","second_Visit_3_PB_8.csv","failed",2.3,NA,NA,"wrong sign in 'by' argument","There was 1 warning in `dplyr::summarize()`.
+ℹ In argument: `start_time = min(.data$datetime)`.
+Caused by warning in `min.default()`:
+! no non-missing arguments to min; returning Inf | Hockey-stick time: no base part","coarse_preliminary",18.910905122757
+"Blume","second_Visit_3_PB_9.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2025-01-01 02:30:00","coarse_preliminary",19.5833976268768
+"Civibe","civibe_melatonin_FD200_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-01-31 09:19:08.71, 2024-01-31 16:49:57.09 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-01-31 08:45:04.96, 2024-01-31 09:19:08.71, 2024-01-31 10:01:00, 2024-01-31 16:49:57.09, 2024-01-31 17:33:41.87","coarse_preliminary",32.487256526947
+"Civibe","civibe_melatonin_FD200_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-02-01 09:16:11, 2024-02-01 15:19:29.92 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-02-01 07:47:27.96, 2024-02-01 08:33:02, 2024-02-01 09:16:11, 2024-02-01 10:02:00.55, 2024-02-01 15:19:29.92, 2024-02-01 16:02:09.32, 2024-02-01 19:46:39.71","coarse_preliminary",25.2094442844391
+"Civibe","civibe_melatonin_FD201_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-03-05 06:10:30.17 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-03-05 06:40:58.27, 2024-03-05 07:18:08.1","coarse_preliminary",30.553614616394
+"Civibe","civibe_melatonin_FD201_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-03-06 06:32:43.83 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-03-06 04:18:00, 2024-03-06 05:52:42.8, 2024-03-06 07:18:22.97, 2024-03-06 08:02:56.26","coarse_preliminary",26.2824862003326
+"Civibe","civibe_melatonin_FD202_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-02-26 07:40:27.77, 2024-02-26 09:01:48.41 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-02-26 07:40:27.77, 2024-02-26 08:19:38.3, 2024-02-26 09:54:24.6, 2024-02-26 14:23:32.46","coarse_preliminary",24.9316766262054
+"Civibe","civibe_melatonin_FD202_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-02-27 07:31:48.46 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-02-27 04:34:09.82, 2024-02-27 05:18:04.17, 2024-02-27 06:45:00, 2024-02-27 07:31:48.46, 2024-02-27 08:16:42.52, 2024-02-27 09:11:18.99","coarse_preliminary",20.6388137340546
+"Civibe","civibe_melatonin_FD204_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-04-16 09:47:00.34 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-04-16 07:43:52, 2024-04-16 08:17:00.71, 2024-04-16 09:05:22.62, 2024-04-16 10:32:24.09, 2024-04-16 14:17:23.38","coarse_preliminary",25.2222406864166
+"Civibe","civibe_melatonin_FD204_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-04-17 09:04:32.94 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-04-17 04:32:47.49, 2024-04-17 05:22:44.91, 2024-04-17 06:53:49.22, 2024-04-17 07:32:47.68, 2024-04-17 08:18:56.73, 2024-04-17 09:04:32.94, 2024-04-17 11:18:09.16","coarse_preliminary",23.9770517349243
+"Civibe","civibe_melatonin_FD205_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-03-26 08:49:20.01 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-03-26 08:09:51.41, 2024-03-26 08:49:20.01, 2024-03-26 09:33:12.88, 2024-03-26 11:02:43.9","coarse_preliminary",44.5665981769562
+"Civibe","civibe_melatonin_FD205_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-03-27 08:47:00.32 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-03-27 05:03:10.28, 2024-03-27 07:18:03.63, 2024-03-27 08:47:00.32, 2024-03-27 09:32:42.47, 2024-03-27 11:49:16.6","coarse_preliminary",32.1588447093964
+"Civibe","civibe_melatonin_FD206_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-05-02 08:47:39.94 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-05-02 08:10:47.77, 2024-05-02 08:47:39.94, 2024-05-02 09:32:12.57, 2024-05-02 14:04:57.93, 2024-05-02 14:49:49.15","coarse_preliminary",32.4359440803528
+"Civibe","civibe_melatonin_FD206_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-05-03 08:47:44.47 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-05-03 05:01:42.31, 2024-05-03 07:17:51.06, 2024-05-03 08:03:00, 2024-05-03 08:47:44.47, 2024-05-03 09:36:19.11","coarse_preliminary",24.5300109386444
+"Civibe","civibe_melatonin_FD207_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-05-07 12:33:29.36, 2024-05-07 17:49:38.8 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-05-07 08:10:12.14, 2024-05-07 08:49:50.97, 2024-05-07 09:33:29.64, 2024-05-07 11:03:09.73, 2024-05-07 18:34:07.76","coarse_preliminary",23.2745101451874
+"Civibe","civibe_melatonin_FD207_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-05-08 12:36:44.84, 2024-05-08 16:20:24.5 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-05-08 05:02:02.22, 2024-05-08 07:17:21.15, 2024-05-08 08:05:27.97, 2024-05-08 09:33:52.22, 2024-05-08 15:33:53.28, 2024-05-08 17:05:34.12","coarse_preliminary",24.7262938022614
+"Civibe","civibe_melatonin_FD209_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-06-04 09:11:35.7 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-06-04 09:11:35.7, 2024-06-04 09:50:44.26","coarse_preliminary",32.865122795105
+"Civibe","civibe_melatonin_FD209_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-06-05 09:02:40.33 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-06-05 06:03:49.64, 2024-06-05 06:48:53.35, 2024-06-05 08:20:39.64, 2024-06-05 09:02:40.33, 2024-06-05 10:32:48.81","coarse_preliminary",39.7853171825409
+"Civibe","civibe_melatonin_FD210_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Large slope differences found in base segment at the following timestamps:
+2024-08-20 08:28:10.63","coarse_preliminary",25.8944804668427
+"Civibe","civibe_melatonin_FD210_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-08-21 05:19:26.51 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-08-21 05:19:26.51, 2024-08-21 06:04:18.32","coarse_preliminary",30.8300828933716
+"Civibe","civibe_melatonin_FD211_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-07-18 09:05:05.89 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-07-18 08:26:07.23, 2024-07-18 09:05:05.89, 2024-07-18 09:49:38.08","coarse_preliminary",25.6679072380066
+"Civibe","civibe_melatonin_FD211_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-07-19 09:50:56.32 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-07-19 05:19:04.93, 2024-07-19 06:04:25.41, 2024-07-19 07:33:06.86, 2024-07-19 08:19:14.29, 2024-07-19 09:03:19.98, 2024-07-19 09:50:56.32","coarse_preliminary",28.4991145133972
+"Civibe","civibe_melatonin_FD212_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-09-28 08:47:36.56 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-09-28 08:10:19.03, 2024-09-28 08:47:36.56, 2024-09-28 09:32:59.95","coarse_preliminary",24.9707114696503
+"Civibe","civibe_melatonin_FD212_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-09-29 08:54:51.93 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-09-29 05:03:02.92, 2024-09-29 07:16:47.01, 2024-09-29 08:02:11.65, 2024-09-29 08:54:51.93, 2024-09-29 09:34:00.92","coarse_preliminary",33.985239982605
+"Civibe","civibe_melatonin_FD213_day1.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-09-17 09:19:58.36 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-09-17 08:42:00.19, 2024-09-17 09:19:58.36, 2024-09-17 11:35:08.4","coarse_preliminary",27.4768290519714
+"Civibe","civibe_melatonin_FD213_day2.csv","failed",2.3,NA,NA,"could not find function ""scale_y_continuous""","Warning: Descents across threshold found in base segment at the following timestamps:
+2024-09-18 09:19:29.64 | Warning: Large slope differences found in base segment at the following timestamps:
+2024-09-18 06:16:49.68, 2024-09-18 07:47:24.95, 2024-09-18 08:32:25.26, 2024-09-18 10:04:05.58","coarse_preliminary",21.7079463005066
