@@ -1,0 +1,39 @@
+{
+  "input_sha256": "7be2c52ae5dda7c7bd46dee30a13aef7fddc5c35fdd711b074dd9b1e59465ed9",
+  "source_commit": "ed90d9ac91b9fa81c0869dafbe6efb3c8d9faed3",
+  "rows": 267,
+  "participants": 39,
+  "evenings": 83,
+  "first_evening": "2025-06-16",
+  "last_evening": "2025-09-06",
+  "horizons_signature": {
+    "version": "1.2",
+    "source": "NASA/JPL Horizons API"
+  },
+  "horizons_response_sha256": "61e19be27351bef1da2a7c5e4d98b7bd5d2e716d8cee7cff79566e1f3c771366",
+  "parameters": {
+    "format": "json",
+    "COMMAND": "'301'",
+    "EPHEM_TYPE": "'OBSERVER'",
+    "CENTER": "'coord@399'",
+    "COORD_TYPE": "'GEODETIC'",
+    "SITE_COORD": "'-84.0509,9.9372,0'",
+    "START_TIME": "'2025-06-17 00:00'",
+    "STOP_TIME": "'2025-09-07 06:00'",
+    "STEP_SIZE": "'1 h'",
+    "QUANTITIES": "'4,10,24'",
+    "CSV_FORMAT": "'YES'",
+    "APPARENT": "'AIRLESS'"
+  },
+  "timezone": "America/Costa_Rica",
+  "timezone_check": "UCR_S001 raw diary 2025-06-16 21:20 local matches RData 2025-06-17 03:20 UTC; metadata gives Costa Rica timezone.",
+  "site_coordinates_source": "data/Metadata_Melidos_UCR.xlsx, study geographical location: 9.9372 N, 84.0509 W",
+  "limitations": [
+    "Campus location is a city-level proxy, not individual residence or night location. Site elevation assumed 0 km.",
+    "Six hourly geometric moon elevations at 18:00\u201323:00 local; count is not exact visible duration or first six hours after dusk.",
+    "No clouds, buildings, indoor exposure, or actual moonlight lux measured. Illuminated percent is lunar disk fraction, not personal illuminance.",
+    "Sleep diary duration in hours and delay in minutes; distinct outcomes from Blume laboratory latency.",
+    "Light-glasses subset (6 people) has not been merged; analysis cannot control actual personal light exposure.",
+    "Astronomical covariates are calculated NASA ephemerides; sleep observations are UCR terrestrial data, not NASA astronaut data."
+  ]
+}
