@@ -35,4 +35,4 @@ A mixed-effects regression with participant random intercepts, time-of-day and s
 3. Validate sleep latency predictions and only then investigate a separately measured circadian phase outcome.
 4. Compare transfer to HERA/ISS only with appropriate, authorized data.
 
-**No real participant dataset has yet been ingested or validated in this repository.**
+Four published Manchester RData tables have now been downloaded and read in a local audit. See REAL_DATA_SOURCES.md and manchester_import_audit.json. The audit identified 454 paired light/Fitbit records from 88 participants and 440 paired light/diary records from 88 participants. These are alignment counts, not predictive validation. The generic model schema has not been populated: TAT250 is a duration rather than mean daytime lux, and presleep3hr is anchored to observed Fitbit sleep onset. No real-data model fit or astronaut validation is claimed.
