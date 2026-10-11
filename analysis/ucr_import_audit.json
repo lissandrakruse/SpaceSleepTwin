@@ -1,0 +1,80 @@
+{
+  "source": "https://github.com/MeLiDosProject/Sancho-SalasEtAl_Dataset_2025",
+  "upstream_commit": "ed90d9ac91b9fa81c0869dafbe6efb3c8d9faed3",
+  "status": "download and table inspection only; not harmonized, paired or validated",
+  "tables": [
+    {
+      "file": "sleepdiaries.RData",
+      "bytes": 13513,
+      "objects": {
+        "sleepdiary": {
+          "rows": 267,
+          "columns": [
+            "Id",
+            "bedtime",
+            "sleepprep",
+            "wake",
+            "out_ofbed",
+            "sleepdelay",
+            "awakenings",
+            "awake_duration",
+            "sleepquality",
+            "daytype2",
+            "comments",
+            "sleep",
+            "sleep_duration",
+            "comments_english"
+          ],
+          "participants": 39
+        }
+      }
+    },
+    {
+      "file": "light_glasses_1minute.RData",
+      "bytes": 1888197,
+      "objects": {
+        "light_glasses_1min": {
+          "rows": 51840,
+          "columns": [
+            "Id",
+            "Datetime",
+            "EVENT",
+            "TEMPERATURE",
+            "ORIENTATION",
+            "PIM",
+            "PIMn",
+            "TAT",
+            "TATn",
+            "ZCM",
+            "ZCMn",
+            "LIGHT",
+            "IR.LIGHT",
+            "CAP_SENS_1",
+            "CAP_SENS_2",
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F5",
+            "F6",
+            "F7",
+            "F8",
+            "MEDI",
+            "CLEAR",
+            "STATE",
+            "file.name",
+            "position",
+            "is.implicit"
+          ],
+          "participants": 6
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "Eye-level light available in this imported table for only six participants; do not assign 39-person coverage.",
+    "Inspect diary dictionary units and local timezone before joining or modeling.",
+    "Chest and wrist light not downloaded in this audit.",
+    "No astronaut data or clinical validation."
+  ]
+}
