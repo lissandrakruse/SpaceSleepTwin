@@ -1,0 +1,68 @@
+{
+  "estimator": "StandardScaler fit on training rows only + Ridge(alpha=10), fixed alpha, no tuning",
+  "baseline_features": [
+    "workday",
+    "weekday sine",
+    "weekday cosine",
+    "elapsed calendar days"
+  ],
+  "added_lunar_features": [
+    "illuminated disk percent at 18h local",
+    "count of positive geometric elevations at hourly 18h\u201323h local"
+  ],
+  "metrics": {
+    "participant_held_out": {
+      "sleepdelay_minutes": {
+        "calendar_workday": {
+          "n_predictions": 267,
+          "mae": 10.991628922779608,
+          "rmse": 14.988253382290928
+        },
+        "calendar_workday_plus_lunar": {
+          "n_predictions": 267,
+          "mae": 11.323447933694256,
+          "rmse": 15.343064717026547
+        }
+      },
+      "sleep_duration_hours": {
+        "calendar_workday": {
+          "n_predictions": 267,
+          "mae": 1.0065929445591355,
+          "rmse": 1.296635137246339
+        },
+        "calendar_workday_plus_lunar": {
+          "n_predictions": 267,
+          "mae": 1.0063734895135246,
+          "rmse": 1.2941897856482374
+        }
+      }
+    },
+    "forward_calendar_blocks": {
+      "sleepdelay_minutes": {
+        "calendar_workday": {
+          "n_predictions": 209,
+          "mae": 15.398372088152668,
+          "rmse": 18.511764388689816
+        },
+        "calendar_workday_plus_lunar": {
+          "n_predictions": 209,
+          "mae": 15.506194581605772,
+          "rmse": 18.867447701414303
+        }
+      },
+      "sleep_duration_hours": {
+        "calendar_workday": {
+          "n_predictions": 209,
+          "mae": 1.059802759090652,
+          "rmse": 1.3472149595015128
+        },
+        "calendar_workday_plus_lunar": {
+          "n_predictions": 209,
+          "mae": 1.069080683280128,
+          "rmse": 1.3700794475710005
+        }
+      }
+    }
+  },
+  "interpretation": "Exploratory ablation, not causal or external validation. Calendar-block evaluation tests later dates, may include previously observed people. Participant holdout can share dates across train/test and is insufficient alone for lunar claims. No negative prediction clipping or removal of long sleep delays. Sleep duration errors in hours; delay errors in minutes."
+}
