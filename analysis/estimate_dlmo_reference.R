@@ -4,6 +4,7 @@ args <- commandArgs(trailingOnly = TRUE)
 root <- if (length(args) >= 1) args[[1]] else "data/dlmo_reference/data"
 out <- if (length(args) >= 2) args[[2]] else "outputs/dlmo_reference"
 dir.create(out, recursive = TRUE, showWarnings = FALSE)
+fine <- tolower(Sys.getenv("DLMO_FINE", "true")) == "true"
 if (!requireNamespace("dlmoR", quietly = TRUE)) stop("Install pinned dlmoR first")
 desc <- packageDescription("dlmoR")
 expected <- "3f9ff3277b8e9ecbd4ca68e1efeb857ab483d180"
@@ -25,12 +26,14 @@ process_profile <- function(file) {
     # Treat timestamps as an analysis axis; UTC parsing does not establish
     # original collection timezone or reconstruct shifted clock times.
     df$datetime <- as.POSIXct(df$datetime, tz = "UTC")
-    fit <- dlmoR::calculate_dlmo(df, threshold = 2.3, fine_flag = TRUE)
-    x <- as.numeric(fit$ip$inflection_point_fine$x)
-    if (length(x) != 1 || !is.finite(x)) stop("No finite fine-grid estimate")
+    fit <- dlmoR::calculate_dlmo(df, threshold = 2.3, fine_flag = fine)
+    grid <- if (fine) "fine" else "coarse"
+    point <- fit$ip[[paste0("inflection_point_", grid)]]
+    x <- as.numeric(point$x)
+    if (length(x) != 1 || !is.finite(x)) stop("No finite grid estimate")
     data.frame(cohort = basename(dirname(file)), profile = basename(file),
                status = "estimated", threshold_pg_ml = 2.3,
-               fit_axis_hours = x, display_time = as.character(fit$dlmo$fine$time),
+               fit_axis_hours = x, display_time = as.character(fit$dlmo[[grid]]$time),
                error = "", stringsAsFactors = FALSE)
   }, warning = function(w) {
     warnings <<- c(warnings, conditionMessage(w))
@@ -42,6 +45,7 @@ process_profile <- function(file) {
                error = conditionMessage(e), stringsAsFactors = FALSE)
   })
   result$warnings <- paste(unique(warnings), collapse = " | ")
+  result$search_resolution <- if (fine) "fine" else "coarse_preliminary"
   result$elapsed_seconds <- as.numeric(difftime(Sys.time(), start, units = "secs"))
   # Preserve completed work even if a later profile or the job times out.
   write.csv(result, file.path(out, "per_profile", paste0(result$cohort, "_", result$profile)),
