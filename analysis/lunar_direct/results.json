@@ -1,0 +1,82 @@
+{
+  "feature_source_sha256": "08fa5bb6e0aba620b2833749a6f1b09bc8b457f63ebacd082328e6a05dde1ba3",
+  "protocol": "Same 115 nights / 30 people and forward date folds as pre-sleep test. Fixed prior median history; residual bias correction or residual Ridge(alpha=10) on two lunar features only. StandardScaler fit on training rows only, no tuning.",
+  "metrics": {
+    "sleepdelay_minutes": {
+      "history_only": {
+        "n_predictions": 115,
+        "mae": 8.569565217391304,
+        "rmse": 13.77497731395591
+      },
+      "history_bias_correction": {
+        "n_predictions": 115,
+        "mae": 8.864087755620936,
+        "rmse": 13.910228934704774
+      },
+      "history_plus_lunar": {
+        "n_predictions": 115,
+        "mae": 8.90517022952083,
+        "rmse": 13.933487843925471
+      }
+    },
+    "sleep_duration_hours": {
+      "history_only": {
+        "n_predictions": 115,
+        "mae": 1.305072463768116,
+        "rmse": 1.6620410448549725
+      },
+      "history_bias_correction": {
+        "n_predictions": 115,
+        "mae": 1.2933927438026092,
+        "rmse": 1.6364492767519396
+      },
+      "history_plus_lunar": {
+        "n_predictions": 115,
+        "mae": 1.295973190265664,
+        "rmse": 1.6382785641500799
+      }
+    }
+  },
+  "uncertainty": {
+    "sleepdelay_minutes": {
+      "history_only": {
+        "mae_difference_lunar_minus_reference": 0.33560501212952476,
+        "paired_participant_bootstrap_95_percentile_interval": [
+          0.21661968882831412,
+          0.4561287136606866
+        ]
+      },
+      "history_bias_correction": {
+        "mae_difference_lunar_minus_reference": 0.04108247389989278,
+        "paired_participant_bootstrap_95_percentile_interval": [
+          -0.11197600392123284,
+          0.19827446704114976
+        ]
+      }
+    },
+    "sleep_duration_hours": {
+      "history_only": {
+        "mae_difference_lunar_minus_reference": -0.009099273502452059,
+        "paired_participant_bootstrap_95_percentile_interval": [
+          -0.05228012803624842,
+          0.03179132566523136
+        ]
+      },
+      "history_bias_correction": {
+        "mae_difference_lunar_minus_reference": 0.002580446463054858,
+        "paired_participant_bootstrap_95_percentile_interval": [
+          -0.007144400379609485,
+          0.011545011551297293
+        ]
+      }
+    }
+  },
+  "bootstrap": "2000 paired fixed-prediction participant resamples, seed 20261011. Conditional descriptive intervals; no refitting or cross-person temporal dependence modeled.",
+  "limitations": [
+    "Sequential exploratory analysis of an already inspected cohort; independent replication required.",
+    "Lunar features are geometric proxies without darkness, cloud or indoor exposure adjustment.",
+    "No causal attribution or astronaut validation.",
+    "Adding a feature is not itself regularization; ridge penalty provides regularization.",
+    "Short test histories do not diagnose coefficient instability; training information and dependence matter."
+  ]
+}
