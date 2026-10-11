@@ -1,0 +1,56 @@
+{
+  "source_sha256": "d43900c206b35bcc29e1c5607d8648c56c0e2434515c860c151069b2b8de6611",
+  "eligible_visits_per_endpoint": 28,
+  "eligible_participants": 15,
+  "weights": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "selection": "Inner leave-one-participant-out macro MAE; ties choose smaller history weight. Outer participant never used for weight selection or population median. Only strictly earlier matched visits used as personal history.",
+  "metrics": {
+    "observed_phase_shift_minutes": {
+      "baseline": {
+        "mae_minutes": 31.44642857142859,
+        "rmse_minutes": 38.112863407816235,
+        "participant_macro_mae_minutes": 30.950000000000017
+      },
+      "history_only": {
+        "mae_minutes": 41.10535714285713,
+        "rmse_minutes": 56.568803713455246,
+        "participant_macro_mae_minutes": 40.024999999999984
+      },
+      "nested_personalized": {
+        "mae_minutes": 33.98705357142858,
+        "rmse_minutes": 41.374446524675285,
+        "participant_macro_mae_minutes": 33.52625000000001
+      }
+    },
+    "sleep_latency_to_10min_continuous_sleep_minutes": {
+      "baseline": {
+        "mae_minutes": 4.589285714285714,
+        "rmse_minutes": 10.093756910656635,
+        "participant_macro_mae_minutes": 4.883333333333334
+      },
+      "history_only": {
+        "mae_minutes": 9.758928571428571,
+        "rmse_minutes": 32.20993496910985,
+        "participant_macro_mae_minutes": 9.258333333333333
+      },
+      "nested_personalized": {
+        "mae_minutes": 9.936607142857143,
+        "rmse_minutes": 32.33041711045056,
+        "participant_macro_mae_minutes": 9.8125
+      }
+    }
+  },
+  "limitations": [
+    "Exploratory analysis on a cohort already inspected; requires independent confirmation.",
+    "Different task from first benchmark: repeat-visit forecasting for people with a previous measured outcome. Compare only the same eligible visits here.",
+    "No sleep outlier removal, zero retained; excluded source conflicts remain excluded.",
+    "Not a mechanistic twin, astronaut validation, causal light effect, or demonstrated daily-life forecast."
+  ]
+}
