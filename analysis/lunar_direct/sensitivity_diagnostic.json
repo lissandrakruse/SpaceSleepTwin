@@ -1,0 +1,32 @@
+{
+  "results": {
+    "sleepdelay_minutes": {
+      "participants_worsened": 22,
+      "participants_improved": 7,
+      "ties": 1,
+      "exact_two_sided_sign_p": 0.008130058646202087,
+      "fixed_prediction_participant_bootstrap_standard_error": 0.06101359105839412,
+      "approximate_conditional_80pct_mde": 0.17093477481318656,
+      "unit": "minutes"
+    },
+    "sleep_duration_hours": {
+      "participants_worsened": 15,
+      "participants_improved": 13,
+      "ties": 2,
+      "exact_two_sided_sign_p": 0.8505540192127228,
+      "fixed_prediction_participant_bootstrap_standard_error": 0.021776134139416956,
+      "approximate_conditional_80pct_mde": 0.06100769551263571,
+      "unit": "hours"
+    }
+  },
+  "bootstrap_resamples": 2000,
+  "seed": 20261011,
+  "mde_definition": "Normal-approximation difference in predictive MAE: (z_0.975 + z_0.8) \u00d7 conditional bootstrap SE. Not the detectable biological lunar effect or validated prospective model power.",
+  "limitations": [
+    "Sign test assumes independent participant signs under null. Shared calendar dates and shared fitted models create dependence not represented by this binomial calculation.",
+    "Sequential exploratory analyses and selection are not corrected; p-values are nominal descriptive calculations.",
+    "Bootstrap resamples fixed participant prediction errors, without model refitting or calendar dependence.",
+    "Approximate MDE assumes stable variance and normal approximation under alternatives; this does not establish actual 80% power.",
+    "Interpretation is no demonstrated predictive gain from tested geometric features on this cohort, not evidence that lunar biology is absent."
+  ]
+}
