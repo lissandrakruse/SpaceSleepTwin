@@ -6,6 +6,9 @@ out <- if (length(args) >= 2) args[[2]] else "outputs/dlmo_reference"
 dir.create(out, recursive = TRUE, showWarnings = FALSE)
 fine <- tolower(Sys.getenv("DLMO_FINE", "true")) == "true"
 if (!requireNamespace("dlmoR", quietly = TRUE)) stop("Install pinned dlmoR first")
+# The upstream article scripts attach ggplot2; v0.1.1 calls an unqualified
+# scale_y_continuous during plotting. Replicate that search-path dependency.
+suppressPackageStartupMessages(library(ggplot2))
 desc <- packageDescription("dlmoR")
 expected <- "3f9ff3277b8e9ecbd4ca68e1efeb857ab483d180"
 if (is.null(desc$RemoteSha) || desc$RemoteSha != expected) {
@@ -14,6 +17,9 @@ if (is.null(desc$RemoteSha) || desc$RemoteSha != expected) {
 writeLines(capture.output(sessionInfo()), file.path(out, "sessionInfo.txt"))
 files <- sort(list.files(root, pattern = "\\.csv$", recursive = TRUE, full.names = TRUE))
 if (!length(files)) stop("No profiles found")
+limit <- as.integer(Sys.getenv("DLMO_PROFILE_LIMIT", "0"))
+if (is.na(limit) || limit < 0) stop("Invalid DLMO_PROFILE_LIMIT")
+if (limit > 0) files <- head(files, limit)
 workers <- min(4L, parallel::detectCores(), length(files))
 if (.Platform$OS.type == "windows" || is.na(workers)) workers <- 1L
 dir.create(file.path(out, "per_profile"), showWarnings = FALSE)
