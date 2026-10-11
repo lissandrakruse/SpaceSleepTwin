@@ -26,7 +26,7 @@ The [DLMO reproduction record](analysis/DLMO_REPRODUCTION.md) documents a pinned
 
 [Two selected observed profiles](research/figures/melatonin_observations.svg) illustrate the raw data on a relative time axis.
 
-The [original Blume experiment audit](analysis/blume_experiment/README.md) verifies that the 96 Blume curves match original observed measurements and links phase-shift and sleep endpoints within 44 visits from the same study. Missing endpoints and two conflicting visit labels remain explicit. This is the same cohort already in the melatonin inventory, not an increase in independent participants. A [single-profile coarse DLMO pilot](analysis/dlmo_pilot/baseline_estimates.csv) has executed successfully; expanded and fine-grid reproduction are separate checks.
+The [original Blume experiment audit](analysis/blume_experiment/README.md) verifies that the 96 Blume curves match original observed measurements and links phase-shift and sleep endpoints within 44 visits from the same study. Missing endpoints and two conflicting visit labels remain explicit. This is the same cohort already in the melatonin inventory, not an increase in independent participants. Both [coarse](analysis/dlmo_pilot/baseline_estimates.csv) and [fine-grid](analysis/dlmo_fine_pilot/baseline_estimates.csv) extraction have executed successfully on one real profile, with their actual R sessions recorded. Full-cohort reproduction and validation of the twin remain separate work.
 
 ## Key references
 1. Brown TM et al. (2022), *PLOS Biology*. https://doi.org/10.1371/journal.pbio.3001571
