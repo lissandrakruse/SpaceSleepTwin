@@ -15,6 +15,11 @@ Interactive **English-language research prototype** for exploring circadian ligh
 ## Scientific limitations
 This is a simplified phenomenological circadian oscillator for exploratory scenario comparison. It is **not** the full Jewett–Forger–Kronauer model and has **not** been calibrated or validated using astronaut observations. Lighting profiles use illustrative photopic lux, **not** CIE S 026 melanopic EDI. It is not medical guidance, an official NASA product, or evidence of astronaut health outcomes.
 
+## Evidence and real-data development
+The source-to-component map is documented in [research/TWIN_SOURCES.md](research/TWIN_SOURCES.md). It includes Manchester and MeLiDos measurements, the Forger99 research engine, Brown et al. exposure guidance, HERA lighting research, dlmoR melatonin methods, and SUNSHINE context.
+
+Manchester and Costa Rica tables have been downloaded and inspected locally; aggregate import audits are in analysis/. They have not calibrated the browser simulator. HERA and SUNSHINE participant records require access requests. See [research/EVIDENCE_MAP.md](research/EVIDENCE_MAP.md) for findings and limitations.
+
 ## Key references
 1. Brown TM et al. (2022), *PLOS Biology*. https://doi.org/10.1371/journal.pbio.3001571
 2. CIE S 026/E:2018. https://cie.co.at/publications/cie-system-metrology-optical-radiation-iprgc-influenced-responses-light-0
