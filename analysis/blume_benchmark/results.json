@@ -1,0 +1,86 @@
+{
+  "source_sha256": "d43900c206b35bcc29e1c5607d8648c56c0e2434515c860c151069b2b8de6611",
+  "python": "3.12.14",
+  "input_visits": 48,
+  "included_visits": 44,
+  "participants": 16,
+  "excluded_visits": [
+    {
+      "participant_id": "blume2024_2",
+      "visit": "1",
+      "reason": "missing_phase_endpoint"
+    },
+    {
+      "participant_id": "blume2024_4",
+      "visit": "2",
+      "reason": "visit_condition_conflict"
+    },
+    {
+      "participant_id": "blume2024_4",
+      "visit": "3",
+      "reason": "visit_condition_conflict"
+    },
+    {
+      "participant_id": "blume2024_5",
+      "visit": "3",
+      "reason": "missing_phase_endpoint"
+    }
+  ],
+  "validation": "Leave one participant out; all visits from that participant withheld. No hyperparameter selection.",
+  "models": "Training mean/median and training condition mean/median only. No twin or mechanistic model predictions.",
+  "metrics": {
+    "observed_phase_shift_minutes": {
+      "train_mean": {
+        "mae_minutes": 31.72917971138334,
+        "rmse_minutes": 40.96599798932704,
+        "participant_macro_mae_minutes": 30.408499868325094
+      },
+      "train_median": {
+        "mae_minutes": 31.084090909090932,
+        "rmse_minutes": 40.34665413637171,
+        "participant_macro_mae_minutes": 29.76250000000002
+      },
+      "condition_mean": {
+        "mae_minutes": 32.72592407592408,
+        "rmse_minutes": 42.23372034798144,
+        "participant_macro_mae_minutes": 30.923832417582414
+      },
+      "condition_median": {
+        "mae_minutes": 32.979545454545466,
+        "rmse_minutes": 41.739994718386214,
+        "participant_macro_mae_minutes": 31.289062500000007
+      }
+    },
+    "sleep_latency_to_10min_continuous_sleep_minutes": {
+      "train_mean": {
+        "mae_minutes": 11.007937940297555,
+        "rmse_minutes": 27.145602543751448,
+        "participant_macro_mae_minutes": 10.831462030359507
+      },
+      "train_median": {
+        "mae_minutes": 7.6477272727272725,
+        "rmse_minutes": 26.85260694979167,
+        "participant_macro_mae_minutes": 7.473958333333333
+      },
+      "condition_mean": {
+        "mae_minutes": 11.657967032967033,
+        "rmse_minutes": 27.587730525946313,
+        "participant_macro_mae_minutes": 11.611864697802199
+      },
+      "condition_median": {
+        "mae_minutes": 7.670454545454546,
+        "rmse_minutes": 26.879465802321704,
+        "participant_macro_mae_minutes": 7.505208333333333
+      }
+    }
+  },
+  "limitations": [
+    "Small repeated-measures terrestrial laboratory cohort, not astronaut validation.",
+    "Condition predictors cannot separate spectral effects from visit/order or protocol effects; background always visit 1.",
+    "Photopic stimulus settings are not melanopic daily light exposure.",
+    "Sleep endpoint is latency to 10 minutes of continuous sleep.",
+    "No outliers removed; zero latency retained.",
+    "All four nonmatched visits excluded for both endpoints to keep one common comparison cohort.",
+    "Leave-one-participant-out errors assess new participants in this study, not new studies or personal longitudinal forecasting."
+  ]
+}
