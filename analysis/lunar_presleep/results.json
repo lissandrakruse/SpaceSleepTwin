@@ -1,0 +1,677 @@
+{
+  "window_hours": 3,
+  "minimum_prior_nights": 3,
+  "eligible_nights": 150,
+  "eligible_participants": 39,
+  "evaluated_participants": 30,
+  "excluded": [
+    {
+      "participant_id": "UCR_S001",
+      "evening_date": "2025-06-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S002",
+      "evening_date": "2025-06-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S003",
+      "evening_date": "2025-06-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S001",
+      "evening_date": "2025-06-17",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S002",
+      "evening_date": "2025-06-17",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S003",
+      "evening_date": "2025-06-17",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S001",
+      "evening_date": "2025-06-18",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S002",
+      "evening_date": "2025-06-18",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S003",
+      "evening_date": "2025-06-18",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S004",
+      "evening_date": "2025-06-23",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S005",
+      "evening_date": "2025-06-23",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S006",
+      "evening_date": "2025-06-23",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S004",
+      "evening_date": "2025-06-24",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S005",
+      "evening_date": "2025-06-24",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S006",
+      "evening_date": "2025-06-24",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S004",
+      "evening_date": "2025-06-25",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S005",
+      "evening_date": "2025-06-25",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S006",
+      "evening_date": "2025-06-25",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S007",
+      "evening_date": "2025-06-30",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S008",
+      "evening_date": "2025-06-30",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S009",
+      "evening_date": "2025-06-30",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S007",
+      "evening_date": "2025-07-01",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S008",
+      "evening_date": "2025-07-01",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S009",
+      "evening_date": "2025-07-01",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S007",
+      "evening_date": "2025-07-02",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S008",
+      "evening_date": "2025-07-02",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S009",
+      "evening_date": "2025-07-02",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S010",
+      "evening_date": "2025-07-07",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S011",
+      "evening_date": "2025-07-07",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S012",
+      "evening_date": "2025-07-07",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S013",
+      "evening_date": "2025-07-07",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S010",
+      "evening_date": "2025-07-08",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S011",
+      "evening_date": "2025-07-08",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S012",
+      "evening_date": "2025-07-08",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S013",
+      "evening_date": "2025-07-08",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S010",
+      "evening_date": "2025-07-09",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S011",
+      "evening_date": "2025-07-09",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S012",
+      "evening_date": "2025-07-09",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S013",
+      "evening_date": "2025-07-09",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S014",
+      "evening_date": "2025-07-14",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S015",
+      "evening_date": "2025-07-14",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S016",
+      "evening_date": "2025-07-14",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S017",
+      "evening_date": "2025-07-14",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S014",
+      "evening_date": "2025-07-15",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S015",
+      "evening_date": "2025-07-15",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S016",
+      "evening_date": "2025-07-15",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S017",
+      "evening_date": "2025-07-15",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S014",
+      "evening_date": "2025-07-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S015",
+      "evening_date": "2025-07-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S016",
+      "evening_date": "2025-07-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S017",
+      "evening_date": "2025-07-16",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S018",
+      "evening_date": "2025-07-20",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S018",
+      "evening_date": "2025-07-21",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S019",
+      "evening_date": "2025-07-21",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S020",
+      "evening_date": "2025-07-21",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S021",
+      "evening_date": "2025-07-21",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S018",
+      "evening_date": "2025-07-22",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S019",
+      "evening_date": "2025-07-22",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S020",
+      "evening_date": "2025-07-22",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S021",
+      "evening_date": "2025-07-22",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S019",
+      "evening_date": "2025-07-23",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S020",
+      "evening_date": "2025-07-23",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S021",
+      "evening_date": "2025-07-23",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S022",
+      "evening_date": "2025-07-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S023",
+      "evening_date": "2025-07-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S022",
+      "evening_date": "2025-07-29",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S023",
+      "evening_date": "2025-07-29",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S022",
+      "evening_date": "2025-07-30",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S023",
+      "evening_date": "2025-07-30",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S025",
+      "evening_date": "2025-08-04",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S026",
+      "evening_date": "2025-08-04",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S027",
+      "evening_date": "2025-08-04",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S025",
+      "evening_date": "2025-08-05",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S026",
+      "evening_date": "2025-08-05",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S027",
+      "evening_date": "2025-08-05",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S025",
+      "evening_date": "2025-08-06",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S026",
+      "evening_date": "2025-08-06",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S027",
+      "evening_date": "2025-08-06",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S028",
+      "evening_date": "2025-08-11",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S029",
+      "evening_date": "2025-08-11",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S030",
+      "evening_date": "2025-08-11",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S028",
+      "evening_date": "2025-08-12",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S029",
+      "evening_date": "2025-08-12",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S030",
+      "evening_date": "2025-08-12",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S028",
+      "evening_date": "2025-08-13",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S029",
+      "evening_date": "2025-08-13",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S030",
+      "evening_date": "2025-08-13",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S031",
+      "evening_date": "2025-08-18",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S032",
+      "evening_date": "2025-08-18",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S033",
+      "evening_date": "2025-08-18",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S031",
+      "evening_date": "2025-08-19",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S032",
+      "evening_date": "2025-08-19",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S033",
+      "evening_date": "2025-08-19",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S031",
+      "evening_date": "2025-08-20",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S032",
+      "evening_date": "2025-08-20",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S033",
+      "evening_date": "2025-08-20",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S034",
+      "evening_date": "2025-08-25",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S034",
+      "evening_date": "2025-08-26",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S035",
+      "evening_date": "2025-08-26",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S036",
+      "evening_date": "2025-08-26",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S037",
+      "evening_date": "2025-08-26",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S038",
+      "evening_date": "2025-08-26",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S039",
+      "evening_date": "2025-08-26",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S034",
+      "evening_date": "2025-08-27",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S035",
+      "evening_date": "2025-08-27",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S036",
+      "evening_date": "2025-08-27",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S037",
+      "evening_date": "2025-08-27",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S038",
+      "evening_date": "2025-08-27",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S039",
+      "evening_date": "2025-08-27",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S035",
+      "evening_date": "2025-08-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S036",
+      "evening_date": "2025-08-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S037",
+      "evening_date": "2025-08-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S038",
+      "evening_date": "2025-08-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S039",
+      "evening_date": "2025-08-28",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S040",
+      "evening_date": "2025-08-31",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S040",
+      "evening_date": "2025-09-01",
+      "reason": "fewer_than_3_prior_nights"
+    },
+    {
+      "participant_id": "UCR_S040",
+      "evening_date": "2025-09-02",
+      "reason": "fewer_than_3_prior_nights"
+    }
+  ],
+  "join_sha256": "cfb532778748165393e3e79bf0c8f3ea8335db4dfc7976273b89e6cd3ccb0499",
+  "ephemeris_sha256": "61e19be27351bef1da2a7c5e4d98b7bd5d2e716d8cee7cff79566e1f3c771366",
+  "model": "Prior personal outcome median plus residual Ridge(alpha=10) with train-only StandardScaler; no tuning. Calendar controls, habitual bedtime and prior outcome median; add two fixed pre-sleep lunar features.",
+  "validation": "Four chronological date blocks; first used only to initialize training. Every prediction has >=3 strictly earlier personal nights; historical outcomes can come from earlier evaluation dates, representing updated operational history. All models evaluated on identical nights.",
+  "metrics": {
+    "sleepdelay_minutes": {
+      "personal_history_only": {
+        "n_predictions": 115,
+        "mae": 8.569565217391304,
+        "rmse": 13.77497731395591
+      },
+      "history_calendar": {
+        "n_predictions": 115,
+        "mae": 9.707923617975137,
+        "rmse": 13.240346410640878
+      },
+      "history_calendar_plus_presleep_lunar": {
+        "n_predictions": 115,
+        "mae": 9.143630119114993,
+        "rmse": 12.898664865426339
+      }
+    },
+    "sleep_duration_hours": {
+      "personal_history_only": {
+        "n_predictions": 115,
+        "mae": 1.305072463768116,
+        "rmse": 1.6620410448549725
+      },
+      "history_calendar": {
+        "n_predictions": 115,
+        "mae": 1.3123649513548785,
+        "rmse": 1.6276321361282002
+      },
+      "history_calendar_plus_presleep_lunar": {
+        "n_predictions": 115,
+        "mae": 1.3071442694977338,
+        "rmse": 1.6218491447550891
+      }
+    }
+  },
+  "limitations": [
+    "Three-hour window and three-history minimum are fixed exploratory choices after inspecting this cohort. Independent confirmation required.",
+    "Hourly geometric elevation and illuminated disk fraction are availability proxies, not measured moonlight; no sunlight/dusk gate, clouds, indoor exposure or individual location.",
+    "City campus coordinates and 0 km altitude assumed.",
+    "No individual z-score, no lunar/artificial-light interaction; actual personal artificial light has not been established.",
+    "Known-person subsequent-night task, not new-person prediction or individual lunar periodicity.",
+    "Conditional bootstrap intervals do not capture model refitting or cross-person calendar dependence; no significance or proof of no lunar effect."
+  ],
+  "uncertainty": {
+    "sleepdelay_minutes": {
+      "history_calendar": {
+        "mae_difference_lunar_minus_reference": -0.5642934988601411,
+        "paired_cluster_bootstrap_95_percentile_interval": [
+          -1.285298557950911,
+          0.028948481011150044
+        ]
+      },
+      "personal_history_only": {
+        "mae_difference_lunar_minus_reference": 0.5740649017236901,
+        "paired_cluster_bootstrap_95_percentile_interval": [
+          -0.5683283173227038,
+          1.5933434995557356
+        ]
+      }
+    },
+    "sleep_duration_hours": {
+      "history_calendar": {
+        "mae_difference_lunar_minus_reference": -0.005220681857144712,
+        "paired_cluster_bootstrap_95_percentile_interval": [
+          -0.01665683264475568,
+          0.0069902380788527535
+        ]
+      },
+      "personal_history_only": {
+        "mae_difference_lunar_minus_reference": 0.0020718057296178153,
+        "paired_cluster_bootstrap_95_percentile_interval": [
+          -0.08347315888867106,
+          0.0997254242983883
+        ]
+      }
+    }
+  },
+  "bootstrap": "2000 resamples of test participants, seed 20261011; paired fixed predictions; negative difference favors lunar. Conditional descriptive interval, not a significance test; ignores refitting and temporal dependence between people."
+}
