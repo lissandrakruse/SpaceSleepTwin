@@ -1,0 +1,268 @@
+{
+  "plan_commit": "42663ae65f43cd4f9e3dab19c736505210bc709b",
+  "source_commit": "ef570332cd6bd04cafea40a66f5a70e6f2206505",
+  "source_hashes": {
+    "light_daily_data.RData": "d7bce0f4425067880432fe4acdbb031363890a1bfe19da8e90dc0ad6db8cd9c4",
+    "sleep_diary.RData": "449085c3117b5b1ed9cc56b7f2dc02d8191dd898fa598952e93424fb46194176"
+  },
+  "diary_rows": 528,
+  "light_rows": 542,
+  "joined_rows": 440,
+  "joined_people": 88,
+  "invalid_diary_rows": 0,
+  "excluded_missing_light": 0,
+  "excluded_short_history": 197,
+  "eligible_nights": 243,
+  "eligible_people": 77,
+  "folds": [
+    {
+      "fold": 0,
+      "train_nights": 58,
+      "train_people": 16,
+      "test_nights": 63,
+      "test_people": 23,
+      "latest_training_date": "2023-05-30",
+      "first_test_date": "2023-05-31"
+    },
+    {
+      "fold": 1,
+      "train_nights": 121,
+      "train_people": 38,
+      "test_nights": 64,
+      "test_people": 22,
+      "latest_training_date": "2023-07-28",
+      "first_test_date": "2023-07-30"
+    },
+    {
+      "fold": 2,
+      "train_nights": 185,
+      "train_people": 58,
+      "test_nights": 58,
+      "test_people": 21,
+      "latest_training_date": "2024-03-04",
+      "first_test_date": "2024-03-05"
+    }
+  ],
+  "metrics": {
+    "personal_history": {
+      "test_nights": 185,
+      "test_people": 62,
+      "mae_minutes": 9.651351351351352,
+      "rmse_minutes": 17.994856622514803,
+      "median_absolute_error_minutes": 5.0,
+      "participant_macro_mae_minutes": 9.845430107526884,
+      "negative_predictions": 0
+    },
+    "history_residual_median": {
+      "test_nights": 185,
+      "test_people": 62,
+      "mae_minutes": 9.651351351351352,
+      "rmse_minutes": 17.994856622514803,
+      "median_absolute_error_minutes": 5.0,
+      "participant_macro_mae_minutes": 9.845430107526884,
+      "negative_predictions": 0
+    },
+    "presleep_light": {
+      "test_nights": 185,
+      "test_people": 62,
+      "mae_minutes": 9.651351351351352,
+      "rmse_minutes": 17.994856622514803,
+      "median_absolute_error_minutes": 5.0,
+      "participant_macro_mae_minutes": 9.845430107526884,
+      "negative_predictions": 0
+    },
+    "daytime_light": {
+      "test_nights": 185,
+      "test_people": 62,
+      "mae_minutes": 9.651351351351352,
+      "rmse_minutes": 17.994856622514803,
+      "median_absolute_error_minutes": 5.0,
+      "participant_macro_mae_minutes": 9.845430107526884,
+      "negative_predictions": 0
+    },
+    "joint_light": {
+      "test_nights": 185,
+      "test_people": 62,
+      "mae_minutes": 9.651351351351352,
+      "rmse_minutes": 17.994856622514803,
+      "median_absolute_error_minutes": 5.0,
+      "participant_macro_mae_minutes": 9.845430107526884,
+      "negative_predictions": 0
+    },
+    "joint_light_log_outcome": {
+      "test_nights": 185,
+      "test_people": 62,
+      "mae_minutes": 9.66501048983874,
+      "rmse_minutes": 18.036272599170267,
+      "median_absolute_error_minutes": 5.000000000000002,
+      "participant_macro_mae_minutes": 9.851673862869884,
+      "negative_predictions": 0
+    }
+  },
+  "fit_diagnostics": [
+    {
+      "model": "presleep_light",
+      "fold": 0,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0
+      ]
+    },
+    {
+      "model": "presleep_light",
+      "fold": 1,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0
+      ]
+    },
+    {
+      "model": "presleep_light",
+      "fold": 2,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0
+      ]
+    },
+    {
+      "model": "daytime_light",
+      "fold": 0,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0
+      ]
+    },
+    {
+      "model": "daytime_light",
+      "fold": 1,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0
+      ]
+    },
+    {
+      "model": "daytime_light",
+      "fold": 2,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0
+      ]
+    },
+    {
+      "model": "joint_light",
+      "fold": 0,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "joint_light",
+      "fold": 1,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "joint_light",
+      "fold": 2,
+      "intercept": -0.0,
+      "standardized_feature_coefficients": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "joint_light_log_outcome",
+      "fold": 0,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "joint_light_log_outcome",
+      "fold": 1,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "joint_light_log_outcome",
+      "fold": 2,
+      "intercept": 0.0,
+      "standardized_feature_coefficients": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "joint_light_paired_uncertainty": {
+    "personal_history": {
+      "mae_difference_joint_minus_reference_minutes": 0.0,
+      "paired_participant_95_percentile_interval_minutes": [
+        0.0,
+        0.0
+      ]
+    },
+    "history_residual_median": {
+      "mae_difference_joint_minus_reference_minutes": 0.0,
+      "paired_participant_95_percentile_interval_minutes": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "latency_clock_field_disagreement_rows": 165,
+  "diary_reported_minutes": {
+    "unique_values": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      8.0,
+      10.0,
+      12.0,
+      15.0,
+      18.0,
+      20.0,
+      25.0,
+      28.0,
+      30.0,
+      31.000000000000004,
+      34.0,
+      35.0,
+      36.0,
+      38.0,
+      40.0,
+      45.0,
+      49.0,
+      50.0,
+      60.0,
+      65.0,
+      80.0,
+      90.0,
+      100.0,
+      120.0,
+      150.0,
+      180.0
+    ],
+    "fraction_at_multiple_5": 0.9545454545454546,
+    "fraction_at_multiple_10": 0.5757575757575758,
+    "fraction_at_multiple_15": 0.3787878787878788
+  },
+  "interpretation": "Retrospective exposure-conditioned evaluation of reported latency, not deployable pre-bedtime prediction, causal H1 confirmation, or astronaut validation. presleep3hr ends at observed Fitbit sleep onset.",
+  "bootstrap": "2000 fixed-prediction participant cluster resamples; conditional intervals ignore refitting and between-person calendar dependence.",
+  "software": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}
