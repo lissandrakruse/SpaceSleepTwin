@@ -1,0 +1,28 @@
+# SpaceSleepTwin — Mission Control
+
+Interactive **English-language research prototype** for exploring circadian lighting schedules in simulated spaceflight.
+
+**[Open the website after GitHub Pages is enabled](https://lissandrakruse.github.io/SpaceSleepTwin/)**
+
+## Features
+- Futuristic mission-control UI and eye visualization
+- Dynamic, static and late-bright-light LED scenarios
+- Mission durations from 7 to 180 days
+- Adjustable intrinsic circadian period
+- Simulated phase plot and CSV export
+- References and explicit scientific limitations
+
+## Scientific limitations
+This is a simplified phenomenological circadian oscillator for exploratory scenario comparison. It is **not** the full Jewett–Forger–Kronauer model and has **not** been calibrated or validated using astronaut observations. Lighting profiles use illustrative photopic lux, **not** CIE S 026 melanopic EDI. It is not medical guidance, an official NASA product, or evidence of astronaut health outcomes.
+
+## Key references
+1. Brown TM et al. (2022), *PLOS Biology*. https://doi.org/10.1371/journal.pbio.3001571
+2. CIE S 026/E:2018. https://cie.co.at/publications/cie-system-metrology-optical-radiation-iprgc-influenced-responses-light-0
+3. Jewett ME, Forger DB, Kronauer RE (1999). Revised limit cycle oscillator model. https://pubmed.ncbi.nlm.nih.gov/?term=Jewett+Forger+Kronauer+1999+circadian
+4. NASA Human Research Program: https://www.nasa.gov/hrp/
+
+## Publishing with GitHub Pages
+Repository Settings → Pages → Build and deployment → Deploy from a branch → **main** / **/(root)** → Save.
+
+## Researcher
+Lissandra Kruse Fuganti · Applied Computing · UEPG, Brazil.
