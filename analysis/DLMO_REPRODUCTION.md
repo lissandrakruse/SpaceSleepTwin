@@ -9,7 +9,7 @@ Data: CC BY 4.0; upstream code: MIT.
 
 The raw repository contains 120 profile CSV files: 96 Blume and 24 Civibe, totaling 1,889 measurement rows. All 120 downloaded files matched their upstream Git blob hashes. The initial audit found no nonfinite or negative melatonin concentrations, duplicate timestamps within a profile, or nonincreasing timestamp sequences.
 
-These are profile files, not 120 independent participants. The raw inventory is not the article's selected analytic sample. Repeated conditions, visits, and days must be modeled as repeated observations; do not split their records randomly as independent people.
+These are profile files, not 120 independent participants. The raw inventory is not the article's selected analytic sample. The article reports that eight of the 96 Blume profiles did not yield estimates in either method (ambiguous baseline/rise or a profile entirely above/below the threshold), leaving 88 Blume plus 24 Civibe profiles in its 112-profile benchmark. This is an external benchmark to check against our output, not a count of successful estimates from our own run. Repeated conditions, visits, and days must be modeled as repeated observations; do not split their records randomly as independent people.
 
 The article repository README calls the package version v0.1.1. Its renv.lock records RemoteRef v0.1.1 and RemoteSha 3f9ff3277b8e9ecbd4ca68e1efeb857ab483d180, although the package Version field is 0.1.0. The current upstream main inspected during this work identifies itself as 0.2.0. Use the recorded source SHA rather than silently switching versions.
 
@@ -25,7 +25,7 @@ Rscript analysis/estimate_dlmo_reference.R
 
 The workflow .github/workflows/dlmo-reference.yml performs these steps using R 4.4.3, the version recorded in the upstream lockfile. Downloaded data stay outside committed project source. The workflow publishes an artifact with its audit, baseline estimates, status counts, and session information.
 
-The R runner uses the pinned dlmoR hockey-stick implementation, threshold 2.3 pg/mL, and fine-grid estimation. This is baseline extraction from observed melatonin curves. It retains every profile, including estimation errors and warnings.
+The R runner saves each completed profile separately and processes independent curves on up to four available CPU cores. It uses the pinned dlmoR hockey-stick implementation, threshold 2.3 pg/mL, and fine-grid estimation. This is baseline extraction from observed melatonin curves. It retains every profile, including estimation errors and warnings.
 
 ## Interpretation and outstanding work
 
