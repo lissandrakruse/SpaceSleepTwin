@@ -1,0 +1,13 @@
+{
+  "workflow_run": 38148411972,
+  "artifact_id": 11705976155,
+  "artifact_sha256": "7b89acce9f3d994758cf06757dba064dcbb451534bab0c4323c69fe37b4bbf49",
+  "profiles_attempted": 120,
+  "successful_exported_estimates": 0,
+  "errors": {
+    "could not find function \"scale_y_continuous\"": 106,
+    "wrong sign in 'by' argument": 13,
+    "missing value where TRUE/FALSE needed": 1
+  },
+  "interpretation": "106 records failed at a plotting dependency; these are not 106 biologically invalid curves. Remaining errors require method/profile review. The dependency correction passed a subsequent one-profile pilot. This attempt is not successful full-sample reproduction."
+}
