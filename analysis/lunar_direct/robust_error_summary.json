@@ -1,0 +1,62 @@
+{
+  "sleep_duration_hours": {
+    "history_bias_correction": {
+      "median_absolute_error": 1.0342857142857147,
+      "participant_macro_mae": 1.2629414251936426,
+      "median_participant_mae": 1.168132377626164
+    },
+    "history_only": {
+      "median_absolute_error": 0.958333333333333,
+      "participant_macro_mae": 1.278476851851852,
+      "median_participant_mae": 1.1847222222222218
+    },
+    "history_plus_lunar": {
+      "median_absolute_error": 1.0531465814735146,
+      "participant_macro_mae": 1.2653756580319906,
+      "median_participant_mae": 1.165600841985952
+    },
+    "lunar_vs_history_people": {
+      "improved": 13,
+      "worsened": 15,
+      "unchanged": 2,
+      "largest_mae_increase": [
+        "UCR_S025",
+        0.20751119708562316
+      ],
+      "largest_mae_decrease": [
+        "UCR_S023",
+        -0.34612130307931555
+      ]
+    }
+  },
+  "sleepdelay_minutes": {
+    "history_bias_correction": {
+      "median_absolute_error": 5.571428571428571,
+      "participant_macro_mae": 8.585998677248677,
+      "median_participant_mae": 6.947368421052632
+    },
+    "history_only": {
+      "median_absolute_error": 5.0,
+      "participant_macro_mae": 8.283333333333333,
+      "median_participant_mae": 6.5625
+    },
+    "history_plus_lunar": {
+      "median_absolute_error": 4.9491730175129005,
+      "participant_macro_mae": 8.620818545497212,
+      "median_participant_mae": 7.288879287394934
+    },
+    "lunar_vs_history_people": {
+      "improved": 7,
+      "worsened": 22,
+      "unchanged": 1,
+      "largest_mae_increase": [
+        "UCR_S036",
+        0.8754395495387923
+      ],
+      "largest_mae_decrease": [
+        "UCR_S010",
+        -0.10271421560070593
+      ]
+    }
+  }
+}
