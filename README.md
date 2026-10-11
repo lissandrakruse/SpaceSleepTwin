@@ -20,6 +20,12 @@ The source-to-component map is documented in [research/TWIN_SOURCES.md](research
 
 Manchester and Costa Rica tables have been downloaded and inspected locally; aggregate import audits are in analysis/. They have not calibrated the browser simulator. HERA and SUNSHINE participant records require access requests. See [research/EVIDENCE_MAP.md](research/EVIDENCE_MAP.md) for findings and limitations.
 
+## Open melatonin reproduction
+
+The [DLMO reproduction record](analysis/DLMO_REPRODUCTION.md) documents a pinned import of 120 raw melatonin profiles (1,889 measurements), file integrity checks, the article's analytic exclusions, and the original R environment. The [workflow](.github/workflows/dlmo-reference.yml) extracts baseline estimates with the article's dlmoR source and preserves per-profile errors and session information. See [execution results](https://github.com/lissandrakruse/SpaceSleepTwin/actions/workflows/dlmo-reference.yml) for actual run status; successful extraction does not validate the twin.
+
+[Two selected observed profiles](research/figures/melatonin_observations.svg) illustrate the raw data on a relative time axis.
+
 ## Key references
 1. Brown TM et al. (2022), *PLOS Biology*. https://doi.org/10.1371/journal.pbio.3001571
 2. CIE S 026/E:2018. https://cie.co.at/publications/cie-system-metrology-optical-radiation-iprgc-influenced-responses-light-0
