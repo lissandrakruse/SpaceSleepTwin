@@ -1,0 +1,43 @@
+{
+  "tau": 24.2,
+  "days": 45,
+  "status": "exploratory scenarios; melEDI substitution unvalidated",
+  "scenarios": [
+    {
+      "schedule": "HERA_variable",
+      "metric": "L1_photopic",
+      "SLS": 0.0,
+      "DAY_ONLY": -0.5369163174594206,
+      "EVENING_ONLY": -1.0455192608663857,
+      "DLS": -1.329106922068836,
+      "interaction_h": 0.2533286562569702
+    },
+    {
+      "schedule": "HERA_variable",
+      "metric": "L1_melEDI_proxy",
+      "SLS": 0.0,
+      "DAY_ONLY": -0.6776924460479835,
+      "EVENING_ONLY": -1.0831586894243241,
+      "DLS": -1.4326372172491044,
+      "interaction_h": 0.3282139182232032
+    },
+    {
+      "schedule": "conventional_23_07",
+      "metric": "L1_photopic",
+      "SLS": 0.0,
+      "DAY_ONLY": -0.4947413203595315,
+      "EVENING_ONLY": -1.0151375814753614,
+      "DLS": -1.3928504794899317,
+      "interaction_h": 0.11702842234496114
+    },
+    {
+      "schedule": "conventional_23_07",
+      "metric": "L1_melEDI_proxy",
+      "SLS": 0.0,
+      "DAY_ONLY": -0.6395290435703392,
+      "EVENING_ONLY": -1.0594703929760279,
+      "DLS": -1.5339711179106292,
+      "interaction_h": 0.16502831863573786
+    }
+  ]
+}

@@ -108,3 +108,10 @@ outputs only, with participant-level outputs removed. See
 [the number-to-source map](EMPIRICAL_FINDINGS.md#number-to-source-map).
 The known [HERA benchmark and decomposition](spacesleeptwin_hera_benchmark.ipynb)
 remain exploratory development evidence, not future independent evaluation.
+
+
+## Proposed outcome-specific hypothesis
+
+[H4 addendum](LSDA_H4_ADDENDUM.md) compares incremental prediction gains for
+measured phase and latency, conditional on exposure availability. It is a draft
+addition to reconcile with the full LSDA request, not a submitted request.

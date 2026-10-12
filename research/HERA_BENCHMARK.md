@@ -112,3 +112,23 @@ Underestimation of the physiological contrast is a possibility, not a result.
 Reproduce with the appended cell in spacesleeptwin_hera_benchmark.ipynb.
 The script decompose_hera.py generates its aggregate outputs from the notebook
 functions; execute it on a clean benchmark copy to avoid duplicate appended cells.
+
+
+## Fixed schedule and input-metric sensitivity
+
+At Level 1 and τ=24.2 h, the four configurations were fixed before execution:
+
+| Schedule | Input | Day-only Δh | Evening-only Δh | Full Δh |
+| --- | --- | ---: | ---: | ---: |
+| HERA_variable | L1_photopic | -0.5369 | -1.0455 | -1.3291 |
+| HERA_variable | L1_melEDI_proxy | -0.6777 | -1.0832 | -1.4326 |
+| conventional_23_07 | L1_photopic | -0.4947 | -1.0151 | -1.3929 |
+| conventional_23_07 | L1_melEDI_proxy | -0.6395 | -1.0595 | -1.5340 |
+
+Evening dimming retains the larger isolated phase contrast in these settings.
+This is conditional model robustness, not general dominance across τ, location,
+or human cohorts. Conventional sleep changes timing and duration together.
+melEDI substitution is an unvalidated numerical input sensitivity, not a
+physiologically validated spectral comparison. No optimum is established.
+See robustness_hera.py and hera_robustness.json; the notebook includes executed
+outputs. The proposed H4 request addendum is LSDA_H4_ADDENDUM.md.
