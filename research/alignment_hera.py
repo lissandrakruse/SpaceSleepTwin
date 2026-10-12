@@ -49,11 +49,11 @@ def premission(tau=24.2):
     phase=circular_mean((minima(ts,xs)+7)%24)
     return state,phase
 
-def mission_phase(state,tau,condition,initial_shift=0.):
+def mission_phase(state,tau,condition,initial_shift=0.,dls_evening_lux=13.):
     # Rotate oscillator state by an assumed initial-phase error; photoreceptor n unchanged.
     angle=initial_shift*np.pi/12;c,s=np.cos(angle),np.sin(angle)
     state=np.array([c*state[0]-s*state[1],s*state[0]+c*state[1],state[2]])
-    ts=[];xs=[];day_lux,evening_lux={'SLS':(122.,122.),'DLS':(264.,13.)}[condition]
+    ts=[];xs=[];day_lux,evening_lux={'SLS':(122.,122.),'DLS':(264.,float(dls_evening_lux))}[condition]
     for day in range(45):
         awake=16 if day%7<2 else 19
         for begin,end,I in [(0,awake-3,day_lux),(awake-3,awake,evening_lux),(awake,24,0.)]:
@@ -106,8 +106,9 @@ def execute_alignment(n_draws=24,seed=20261011):
         draws.append({'tau_h':float(tau),'initial_shift_h':float(shift),
           'SLS_distance_h':r['SLS']['mean_distance_to_center_h'],
           'DLS_distance_h':r['DLS']['mean_distance_to_center_h'],
-          'SLS_fraction':r['SLS']['fraction_in_window'],'DLS_fraction':r['DLS']['fraction_in_window']})
-        if (k+1)%6==0:print(f'Assumed-prior draws completed: {k+1}/{n_draws}',flush=True)
+          'SLS_fraction':r['SLS']['fraction_in_window'],'DLS_fraction':r['DLS']['fraction_in_window'],
+          'phase_contrast_h':float(np.mean(circular_difference(r['SLS']['window_phases_h'],r['DLS']['window_phases_h'])))})
+        if (k+1)%max(6,n_draws//8)==0:print(f'Assumed-prior draws completed: {k+1}/{n_draws}',flush=True)
     mc=pd.DataFrame(draws);difference=mc.SLS_distance_h-mc.DLS_distance_h
     result={'status':'known aggregate benchmark and assumed-prior sensitivity, not individual posterior',
       'target_h':TARGET,'center_h':4.2,'primary':rows,'calibration':primary,
@@ -119,7 +120,11 @@ def execute_alignment(n_draws=24,seed=20261011):
       'tie_fraction':float(np.mean(abs(difference)<=1e-6)),
       'distance_gain_quantiles_h':list(map(float,np.quantile(difference,[.05,.5,.95]))),
       'mean_daily_fraction':{'SLS':float(mc.SLS_fraction.mean()),'DLS':float(mc.DLS_fraction.mean())},
-      'synthetic_draws':draws}
+      'synthetic_draws':draws,
+      'mean_phase_contrast_h':float(mc.phase_contrast_h.mean()),
+      'phase_contrast_sd_h':float(mc.phase_contrast_h.std(ddof=1)),
+      'mean_phase_contrast_mc_se_h':float(mc.phase_contrast_h.std(ddof=1)/np.sqrt(n_draws)),
+      'phase_contrast_prior_quantiles_h':list(map(float,np.quantile(mc.phase_contrast_h,[.05,.5,.95])))}
     print('Assumption-conditional probability DLS closer:',result['assumption_conditional_probability_DLS_closer'],flush=True)
     print('Synthetic-draw mean daily fractions:',result['mean_daily_fraction'],flush=True)
     # Checks for both early and late penalties, wraparound, and independent calibration.

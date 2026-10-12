@@ -38,12 +38,7 @@ drift but leaves dynamic drift too small. Four hours nearly matches dynamic
 drift but overshoots standard. Both reduce the aggregate phase discrepancy
 relative to the original 150-lux routine.
 
-The differential benefit changes very little, remaining 1.31–1.33 h, around
-0.40–0.42 h larger than the descriptive observed 0.91 h. The profiles therefore
-do not jointly reproduce both group drifts and the difference between them.
-A common-delay mechanism alone cannot explain the residual difference in
-the groups' modeled-versus-observed changes. This does not identify which
-alternative mechanism is responsible.
+The contrast changes very little, remaining 1.31–1.33 h. The observed descriptive central estimate is 0.91 h. This central-value difference does not establish model overestimation: propagation of the published SEs under independence gives approximately 0.83 h, with unavailable covariance. Premission profiles move the common drift but leave the contrast almost unchanged. See [final aggregate interpretation](HERA_AGGREGATE_CLOSEOUT.md); no further fitting to these aggregate targets is planned.
 
 Do not infer real outdoor exposure by choosing the closest known-target profile.
 Two groups' aggregate drifts do not prove a single common missing mechanism;

@@ -86,6 +86,9 @@ outputs and retains selected aggregate tables with a number-to-source map.
 
 The benchmark notebook includes fixed hypothetical outdoor-light profiles
 and a 256-draw repetition under the original uncertainty assumptions.
-Premission light increases both group drifts but does not explain the remaining
-difference between changes. See research/HERA_PREMISSION.md and
+Premission light increases both group drifts while leaving their contrast almost unchanged. The central-value gap does not demonstrate overestimation under the approximate published uncertainty. See research/HERA_PREMISSION.md and
 research/hera_alignment_256.json. No favorable profile was selected.
+
+## Aggregate analysis closeout
+
+The final fixed tests report the mean phase contrast over the same 256 draws and late dynamic-light sensitivities at 13/30/60/100 photopic lux. Published SEs and unknown covariance are explicit. No setting is selected to fit the known HERA means; further calibration requires individual LSDA records. See research/HERA_AGGREGATE_CLOSEOUT.md.

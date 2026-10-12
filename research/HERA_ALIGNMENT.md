@@ -97,5 +97,5 @@ hera_alignment_256.json. The first 24 draws are consistent with the earlier
 example; increasing their number does not validate the assumptions.
 
 The separate [premission profile test](HERA_PREMISSION.md) increases both
-modeled group drifts but does not remove the differential mismatch. No
+modeled group drifts while leaving the contrast almost unchanged. This central-value difference is not evidence of overestimation without covariance-aware uncertainty. See [aggregate closeout](HERA_AGGREGATE_CLOSEOUT.md). No
 profile was chosen to replace the original Monte Carlo setting.

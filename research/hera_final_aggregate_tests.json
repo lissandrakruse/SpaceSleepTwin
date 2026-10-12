@@ -1,0 +1,59 @@
+{
+  "fixed_settings": {
+    "tau_h": 24.2,
+    "DLS_day_lux": 264.0,
+    "SLS_lux": 122.0,
+    "premission_routine": "150 lux 07:00\u201323:00, 21 days",
+    "late_lux": [
+      13.0,
+      30.0,
+      60.0,
+      100.0
+    ]
+  },
+  "published_SEs_h": {
+    "mission_SLS": 0.34,
+    "mission_DLS": 0.53,
+    "pre_SLS": 0.33,
+    "pre_DLS": 0.42
+  },
+  "descriptive_change_contrast_h": 0.91,
+  "approx_SE_independence_h": 0.8257118141337206,
+  "assumed_correlation_scenarios": [
+    {
+      "assumed_equal_within_group_rho": 0.0,
+      "approx_se_h": 0.8257118141337206
+    },
+    {
+      "assumed_equal_within_group_rho": 0.5,
+      "approx_se_h": 0.5890670590009257
+    },
+    {
+      "assumed_equal_within_group_rho": 0.8,
+      "approx_se_h": 0.382256458415028
+    },
+    {
+      "assumed_equal_within_group_rho": 1.0,
+      "approx_se_h": 0.11045361017187307
+    }
+  ],
+  "late_light_scenarios": [
+    {
+      "dls_final_three_hours_photopic_lux": 13.0,
+      "mean_SLS_minus_DLS_phase_h": 1.329106922068836
+    },
+    {
+      "dls_final_three_hours_photopic_lux": 30.0,
+      "mean_SLS_minus_DLS_phase_h": 1.1212873931441043
+    },
+    {
+      "dls_final_three_hours_photopic_lux": 60.0,
+      "mean_SLS_minus_DLS_phase_h": 0.8730988937486082
+    },
+    {
+      "dls_final_three_hours_photopic_lux": 100.0,
+      "mean_SLS_minus_DLS_phase_h": 0.6392808757042644
+    }
+  ],
+  "status": "final fixed aggregate sensitivity; no winning setting selected; covariance unavailable"
+}
