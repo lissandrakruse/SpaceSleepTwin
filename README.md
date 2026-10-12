@@ -68,3 +68,15 @@ Repository Settings → Pages → Build and deployment → Deploy from a branch 
 
 ## Researcher
 Lissandra Kruse Fuganti · Applied Computing · UEPG, Brazil.
+
+
+## Light-input decomposition
+
+The executed benchmark notebook now includes four counterfactual schedules:
+standard, daytime change only, evening dimming only and full dynamic.
+At Level 1/τ=24.2 h the partial advances are 0.5369 and 1.0455 h;
+the full advance is 1.3291 h, with a nonadditive interaction of +0.2533 h.
+These are model scenarios, not observed treatment arms or causal attribution.
+See research/hera_decomposition.json for predefined period/level sensitivity.
+The public research/artigo_spacesleeptwin.ipynb removes participant-level
+outputs and retains selected aggregate tables with a number-to-source map.

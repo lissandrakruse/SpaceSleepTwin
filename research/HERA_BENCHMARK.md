@@ -83,3 +83,32 @@ remains available; the browser HERA reconstruction is in `simulator.js`.
 
 Model: Forger, Jewett & Kronauer (1999),
 [A Simpler Model of the Human Circadian Pacemaker](https://doi.org/10.1177/074873099129000867).
+
+
+## Factorial input decomposition (executed, exploratory)
+
+At Level 1, τ=24.2 h, with identical initial states and a 30-second output grid:
+
+| Schedule | Day / final three waking hours (photopic lux) | Mean proxy contrast vs SLS (h) |
+| --- | --- | ---: |
+| SLS | 122 / 122 | 0.0000 |
+| Daytime change only | 264 / 122 | −0.5369 |
+| Evening dimming only | 122 / 13 | −1.0455 |
+| Full DLS | 264 / 13 | −1.3291 |
+
+Full minus the isolated contrasts is +0.2533 h: the oscillator is nonlinear.
+These partial schedules are model counterfactuals, not HERA intervention arms.
+They do not decompose the observed causal effect. No percentage attribution
+or optimal schedule is inferred. All arms keep sleep exposure at zero.
+At Level 2, dynamic daytime light is *lower* than standard; the day-only change
+produces +0.4842 h at τ=24.2 h. Predefined sensitivity uses both levels and
+τ=23.8/24.2/24.6 h, with full results in hera_decomposition.json.
+
+The model receives photopic lux, not the published dynamic spectral response.
+It cannot quantify the spectrum's contribution. Comparing vertical photopic
+and horizontal melanopic measurements confounds geometry and spectrum.
+Underestimation of the physiological contrast is a possibility, not a result.
+
+Reproduce with the appended cell in spacesleeptwin_hera_benchmark.ipynb.
+The script decompose_hera.py generates its aggregate outputs from the notebook
+functions; execute it on a clean benchmark copy to avoid duplicate appended cells.

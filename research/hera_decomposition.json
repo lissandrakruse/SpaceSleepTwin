@@ -1,0 +1,119 @@
+{
+  "status": "exploratory model counterfactuals",
+  "tau": 24.2,
+  "location": "L1_photopic",
+  "output_grid_hours": 0.008333333333333333,
+  "means": {
+    "SLS": 0.0,
+    "DAY_ONLY": -0.5369163174594206,
+    "EVENING_ONLY": -1.0455192608663857,
+    "DLS": -1.329106922068836,
+    "interaction_h": 0.25332865625697004
+  },
+  "windows": [
+    {
+      "mission_day": 5,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.3628205764159773,
+      "EVENING_ONLY": -0.8253705651562555,
+      "DLS": -1.0192855754606285,
+      "interaction_h": 0.16890556611160434
+    },
+    {
+      "mission_day": 12,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.5262697306858115,
+      "EVENING_ONLY": -1.0680930528649526,
+      "DLS": -1.3340172471719995,
+      "interaction_h": 0.26034553637876456
+    },
+    {
+      "mission_day": 19,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.564512204973397,
+      "EVENING_ONLY": -1.1119179162504622,
+      "DLS": -1.3953639679074286,
+      "interaction_h": 0.2810661533164307
+    },
+    {
+      "mission_day": 26,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.5725636148057447,
+      "EVENING_ONLY": -1.1193844832845912,
+      "DLS": -1.4068627102852247,
+      "interaction_h": 0.28508538780511117
+    },
+    {
+      "mission_day": 33,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.5741867865275481,
+      "EVENING_ONLY": -1.120619454985217,
+      "DLS": -1.4089985555399949,
+      "interaction_h": 0.2858076859727703
+    },
+    {
+      "mission_day": 43,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.6211449913480447,
+      "EVENING_ONLY": -1.0277300926568351,
+      "DLS": -1.4101134760477407,
+      "interaction_h": 0.23876160795713908
+    }
+  ],
+  "sensitivity": [
+    {
+      "location": "L1_photopic",
+      "tau": 23.8,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.10419193173337149,
+      "EVENING_ONLY": -0.8958169626081111,
+      "DLS": -0.690207434510711,
+      "interaction_h": 0.3098014598307716
+    },
+    {
+      "location": "L1_photopic",
+      "tau": 24.2,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.5369163174594206,
+      "EVENING_ONLY": -1.0455192608663857,
+      "DLS": -1.329106922068836,
+      "interaction_h": 0.25332865625697004
+    },
+    {
+      "location": "L1_photopic",
+      "tau": 24.6,
+      "SLS": 0.0,
+      "DAY_ONLY": -0.3764640639686787,
+      "EVENING_ONLY": -0.5592327087237147,
+      "DLS": -1.142467905426063,
+      "interaction_h": -0.2067711327336695
+    },
+    {
+      "location": "L2_photopic",
+      "tau": 23.8,
+      "SLS": 0.0,
+      "DAY_ONLY": 0.184708734626471,
+      "EVENING_ONLY": -1.0437971394065724,
+      "DLS": -1.2641716294905916,
+      "interaction_h": -0.40508322471049024
+    },
+    {
+      "location": "L2_photopic",
+      "tau": 24.2,
+      "SLS": 0.0,
+      "DAY_ONLY": 0.48419107537608647,
+      "EVENING_ONLY": -1.321237954293191,
+      "DLS": -1.1125423817461453,
+      "interaction_h": -0.2754955028290409
+    },
+    {
+      "location": "L2_photopic",
+      "tau": 24.6,
+      "SLS": 0.0,
+      "DAY_ONLY": 0.11145050881945788,
+      "EVENING_ONLY": -0.9366553842496224,
+      "DLS": -0.43033970435192376,
+      "interaction_h": 0.3948651710782407
+    }
+  ]
+}

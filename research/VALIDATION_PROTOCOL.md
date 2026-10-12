@@ -99,3 +99,12 @@ frozen configuration, full predictions and participant-level metrics under
 appropriate privacy controls. Public releases should contain code, aggregate
 results and authorized data only. The executed HERA notebook has no individual
 participant records. Record deviations from this protocol explicitly.
+
+
+## Source artifacts for existing evidence
+
+[Public cohort-analysis notebook](artigo_spacesleeptwin.ipynb): selected aggregate
+outputs only, with participant-level outputs removed. See
+[the number-to-source map](EMPIRICAL_FINDINGS.md#number-to-source-map).
+The known [HERA benchmark and decomposition](spacesleeptwin_hera_benchmark.ipynb)
+remain exploratory development evidence, not future independent evaluation.
