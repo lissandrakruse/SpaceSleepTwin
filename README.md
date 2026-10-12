@@ -7,7 +7,7 @@ Interactive **English-language research prototype** for exploring circadian ligh
 ## Features
 - Futuristic mission-control UI and eye visualization
 - Dynamic, static and late-bright-light LED scenarios
-- Mission durations from 7 to 180 days
+- Mission durations from 1 to 180 days (fixed 45-day HERA benchmark)
 - Adjustable intrinsic circadian period
 - Simulated phase plot and CSV export
 - References and explicit scientific limitations
@@ -45,7 +45,7 @@ It is not medical guidance or an official NASA product.
 ## Evidence and real-data development
 The source-to-component map is documented in [research/TWIN_SOURCES.md](research/TWIN_SOURCES.md). It includes Manchester and MeLiDos measurements, the Forger99 research engine, Brown et al. exposure guidance, HERA lighting research, dlmoR melatonin methods, and SUNSHINE context.
 
-Manchester and Costa Rica tables have been downloaded and inspected locally; aggregate import audits are in analysis/. They have not calibrated the browser simulator. The HERA aggregate comparison is a separate exploratory benchmark. HERA and SUNSHINE participant records require access requests. See [research/EVIDENCE_MAP.md](research/EVIDENCE_MAP.md) for findings and limitations.
+Manchester and MeLiDos cohort analyses, including final-night holdouts, are summarized in [empirical findings](research/EMPIRICAL_FINDINGS.md). These describe 88/440 and 145/1,003 adults/nights, respectively. Costa Rica/UCR was excluded from the MeLiDos replication. They have not calibrated the browser simulator. The HERA aggregate comparison is a separate exploratory benchmark. HERA and SUNSHINE participant records require access requests. See [research/EVIDENCE_MAP.md](research/EVIDENCE_MAP.md) for findings and limitations.
 
 ## Open melatonin reproduction
 
@@ -58,8 +58,10 @@ The [original Blume experiment audit](analysis/blume_experiment/README.md) verif
 ## Key references
 1. Brown TM et al. (2022), *PLOS Biology*. https://doi.org/10.1371/journal.pbio.3001571
 2. CIE S 026/E:2018. https://cie.co.at/publications/cie-system-metrology-optical-radiation-iprgc-influenced-responses-light-0
-3. Jewett ME, Forger DB, Kronauer RE (1999). Revised limit cycle oscillator model. https://pubmed.ncbi.nlm.nih.gov/?term=Jewett+Forger+Kronauer+1999+circadian
-4. NASA Human Research Program: https://www.nasa.gov/hrp/
+3. Forger DB, Jewett ME, Kronauer RE (1999). A simpler model of the human circadian pacemaker. J Biol Rhythms 14(6):532–537. https://doi.org/10.1177/074873099129000867
+4. Guidolin C et al. (2024). MeLiDos field study protocol. BMC Public Health 24:3285. https://doi.org/10.1186/s12889-024-20206-4
+5. NASA LSDA (individual HERA data requests): https://lsda.jsc.nasa.gov/
+6. NASA Human Research Program: https://www.nasa.gov/hrp/
 
 ## Publishing with GitHub Pages
 Repository Settings → Pages → Build and deployment → Deploy from a branch → **main** / **/(root)** → Save.
