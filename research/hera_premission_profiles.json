@@ -1,0 +1,70 @@
+{
+  "status": "hypothetical premission sensitivity; all known-target scenarios retained",
+  "fixed_settings": {
+    "tau_h": 24.2,
+    "warmup_days": 21,
+    "baseline_lux": 150.0,
+    "outdoor_lux": 5000.0,
+    "pulse_center_clock_h": 13.0,
+    "pulse_durations_h": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "profiles": [
+    {
+      "outdoor_hours": 0,
+      "premission_proxy_h": 4.293412859090141,
+      "SLS_prediction_h": 5.7952026295613654,
+      "DLS_prediction_h": 3.9161162501058993,
+      "SLS_delay_h": 1.5552026295613643,
+      "DLS_delay_h": 0.22611625010589975,
+      "benefit_change_contrast_h": 1.3290863794554646,
+      "observed_change_contrast_h": 0.91,
+      "SLS_signed_error_h": -0.4247973704386343,
+      "DLS_signed_error_h": -0.8438837498941005,
+      "mean_absolute_group_error_h": 0.6343405601663674
+    },
+    {
+      "outdoor_hours": 1,
+      "premission_proxy_h": 4.01103131209518,
+      "SLS_prediction_h": 6.058315971466112,
+      "DLS_prediction_h": 4.184896029756849,
+      "SLS_delay_h": 1.818315971466113,
+      "DLS_delay_h": 0.4948960297568483,
+      "benefit_change_contrast_h": 1.3234199417092647,
+      "observed_change_contrast_h": 0.91,
+      "SLS_signed_error_h": -0.16168402853388741,
+      "DLS_signed_error_h": -0.575103970243152,
+      "mean_absolute_group_error_h": 0.3683939993885197
+    },
+    {
+      "outdoor_hours": 2,
+      "premission_proxy_h": 3.8262030335292816,
+      "SLS_prediction_h": 6.230542418876684,
+      "DLS_prediction_h": 4.3609761476766415,
+      "SLS_delay_h": 1.990542418876684,
+      "DLS_delay_h": 0.670976147676642,
+      "benefit_change_contrast_h": 1.319566271200042,
+      "observed_change_contrast_h": 0.91,
+      "SLS_signed_error_h": 0.010542418876685389,
+      "DLS_signed_error_h": -0.39902385232335824,
+      "mean_absolute_group_error_h": 0.20478313560002182
+    },
+    {
+      "outdoor_hours": 4,
+      "premission_proxy_h": 3.4882953870965308,
+      "SLS_prediction_h": 6.543717105351479,
+      "DLS_prediction_h": 4.682084417619503,
+      "SLS_delay_h": 2.3037171053514776,
+      "DLS_delay_h": 0.9920844176195036,
+      "benefit_change_contrast_h": 1.311632687731974,
+      "observed_change_contrast_h": 0.91,
+      "SLS_signed_error_h": 0.3237171053514789,
+      "DLS_signed_error_h": -0.07791558238049667,
+      "mean_absolute_group_error_h": 0.2008163438659878
+    }
+  ]
+}

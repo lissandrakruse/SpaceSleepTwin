@@ -142,3 +142,14 @@ are 5.7952/3.9161 h, with errors 0.4248/0.8439 h for SLS/DLS. A common-offset
 alternative predicts both means inside the window, failing the observed SLS
 category. This exposes mapping and calibration dependence rather than validating
 absolute phase. The assumed-prior Monte Carlo is not individual calibration.
+
+
+## Premission exposure sensitivity
+
+[Fixed outdoor-light profiles](HERA_PREMISSION.md) show that 1/2/4 h at
+5,000 lux increase both pre-to-mission delays, but the difference remains
+1.31–1.33 h versus the observed descriptive 0.91 h. No scenario jointly
+reproduces both changes and their contrast. Premission history is a critical
+calibration input, but the current test does not identify the missing mechanism.
+The expanded 256-draw exercise reports Monte Carlo sampling intervals,
+not physiology-calibrated uncertainty.

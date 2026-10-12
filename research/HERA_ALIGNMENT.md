@@ -83,3 +83,19 @@ The correct objective is alignment, not maximum advance. This test exposes
 calibration dependence and absolute-phase errors. A personalized lighting
 decision requires an independently validated marker mapping and individual
 calibration; the present prototype does not establish those requirements.
+
+
+## Expanded numerical sampling: 256 draws
+
+The same assumed distributions, seed and original premission routine were
+rerun with 256 draws. DLS was closer in 256/256; conditional
+fraction 1.0000, marginal 95% Wilson sampling interval
+[0.9852, 1.0000]. This describes finite Monte Carlo uncertainty only.
+It is not individual calibration uncertainty or a clinical confidence interval.
+SLS/tie counts and their separate marginal intervals are retained in
+hera_alignment_256.json. The first 24 draws are consistent with the earlier
+example; increasing their number does not validate the assumptions.
+
+The separate [premission profile test](HERA_PREMISSION.md) increases both
+modeled group drifts but does not remove the differential mismatch. No
+profile was chosen to replace the original Monte Carlo setting.

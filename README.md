@@ -80,3 +80,12 @@ These are model scenarios, not observed treatment arms or causal attribution.
 See research/hera_decomposition.json for predefined period/level sensitivity.
 The public research/artigo_spacesleeptwin.ipynb removes participant-level
 outputs and retains selected aggregate tables with a number-to-source map.
+
+
+## Premission light and Monte Carlo expansion
+
+The benchmark notebook includes fixed hypothetical outdoor-light profiles
+and a 256-draw repetition under the original uncertainty assumptions.
+Premission light increases both group drifts but does not explain the remaining
+difference between changes. See research/HERA_PREMISSION.md and
+research/hera_alignment_256.json. No favorable profile was selected.
