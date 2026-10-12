@@ -1,6 +1,12 @@
 'use strict';
 const $=id=>document.getElementById(id), E=SpaceSleepEngine;
 let exportRows=[], currentResult=null;
+const benchmarkCache=new Map();
+function cachedBenchmark(options){
+  const key=String(options.tau)+'/'+options.location;
+  if(!benchmarkCache.has(key))benchmarkCache.set(key,E.benchmark(options));
+  return benchmarkCache.get(key);
+}
 const fmt=(n,d=2)=>Number(n).toFixed(d);
 function downloadCSV(filename,headers,rows){
   const csv=headers.join(',')+'\n'+rows.map(row=>headers.map(h=>row[h]??'').join(',')).join('\n');
@@ -48,7 +54,7 @@ function draw(){
   $('export').disabled=true;exportRows=[];currentResult=null;
   try{
     if(hera){
-      const r=E.benchmark({tau,location});currentResult={...r,mode,tau,location};
+      const r=cachedBenchmark({tau,location});currentResult={...r,mode,tau,location};
       exportRows=r.windows.map(w=>({...w,scenario:'hera',tau_hours:tau,location,observed_aggregate_contrast_h:E.observedDelta}));
       $('duration').textContent='45';$('dose').textContent=fmt(-r.delta);$('phase').textContent=fmt(r.discrepancyMinutes,1);
       $('metric2Label').textContent='SIMULATED ADVANCE (H)';$('metric3Label').textContent='AGGREGATE DISCREPANCY (MIN)';
@@ -64,7 +70,7 @@ function draw(){
       $('baselineComparison').textContent=`The groups differed before the mission: SLS 4.24 h, DLS 3.69 h. Their descriptive mean changes are +1.98 and +1.07 h, a change contrast of −0.91 h. Against that alternative descriptive quantity, this simulation differs by ${fmt(Math.abs(r.delta-adjustedContrast)*60,1)} min. This is not a paired reanalysis or a causal estimate.`;
       $('sensitivityPanel').hidden=false;
       const scenarios=[{label:'Shorter intrinsic period',tau:23.8,location:'L1'},{label:'Default reconstruction',tau:24.2,location:'L1'},{label:'Longer intrinsic period',tau:24.6,location:'L1'},{label:'Alternative habitat level',tau:24.2,location:'L2'}];
-      $('sensitivityTable').innerHTML='<thead><tr><th>Fixed scenario</th><th>τ (h)</th><th>Level</th><th>DLS − SLS (h)</th></tr></thead><tbody>'+scenarios.map(s=>{const delta=s.tau===tau&&s.location===location?r.delta:E.benchmark(s).delta;return `<tr><td>${s.label}</td><td>${fmt(s.tau,1)}</td><td>${s.location}</td><td>${fmt(delta,3)}</td></tr>`;}).join('')+'</tbody>';
+      $('sensitivityTable').innerHTML='<thead><tr><th>Fixed scenario</th><th>τ (h)</th><th>Level</th><th>DLS − SLS (h)</th></tr></thead><tbody>'+scenarios.map(s=>{const delta=cachedBenchmark(s).delta;return `<tr><td>${s.label}</td><td>${fmt(s.tau,1)}</td><td>${s.location}</td><td>${fmt(delta,3)}</td></tr>`;}).join('')+'</tbody>';
     }else{
       const days=Number($('days').value),colors={static:'#91a8ba',dynamic:'#5ce9ee',late:'#f8c27a'},names={static:'Static',dynamic:'Dynamic',late:'Late bright'};
       const trajectories=Object.keys(colors).map(p=>{
