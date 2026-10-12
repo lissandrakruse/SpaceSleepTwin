@@ -47,7 +47,12 @@ not individual prediction errors. Parameters were not optimized against this
 known target; nevertheless, the target is not an unseen validation set.
 
 Cycle-offset scenarios: −1.335 to −1.327 h. Intrinsic-period scenarios:
-τ=23.8 h → −0.690 h; τ=24.6 h → −1.133 h. Level 2 → −1.113 h.
+τ=23.8 h → −0.690 h; τ=24.6 h → −1.133 h on the notebook 5-minute
+output grid, and −1.142 h on a refined 30-second grid matching the browser.
+Level 2 → −1.113 h.
+At τ=24.6 h, some minima occur near abrupt light-switch boundaries; finer
+output sampling reduces interpolation error. The default τ=24.2 h contrast
+remains −1.329 h.
 These are sensitivity scenarios, not confidence intervals.
 
 The Python notebook uses adaptive SciPy integration. The browser uses RK4

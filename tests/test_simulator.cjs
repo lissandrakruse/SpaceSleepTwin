@@ -10,6 +10,7 @@ assert.ok(Math.abs(main.delta-fine.delta)*60<.01,'RK4 convergence');
 const saved=E.lights.L1.DLS;
 try{E.lights.L1.DLS=E.lights.L1.SLS;assert.ok(Math.abs(E.benchmark().delta)<1e-10,'Identical-light control');}finally{E.lights.L1.DLS=saved;}
 for(const tau of [23.8,24.6])assert.ok(E.benchmark({tau}).delta<0);
+assert.ok(Math.abs(E.benchmark({tau:24.6}).delta-(-1.142467905426063))<.00001,'Refined Python sensitivity agreement');
 assert.ok(Math.abs(E.benchmark({location:'L2'}).delta+1.113)<.001);
 for(const tau of [NaN,23,26])assert.throws(()=>E.simulate({tau}));
 for(const days of [0,181,1.5])assert.throws(()=>E.simulate({days}));
