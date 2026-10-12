@@ -60,6 +60,11 @@ function draw(){
       $('resultTable').innerHTML='<thead><tr><th>Window start day</th><th>SLS proxy (h)</th><th>DLS proxy (h)</th><th>Difference (h)</th></tr></thead><tbody>'+r.windows.map(w=>`<tr><td>${w.day}</td><td>${fmt(w.SLS_proxy_h,3)}</td><td>${fmt(w.DLS_proxy_h,3)}</td><td>${fmt(w.contrast_h,3)}</td></tr>`).join('')+'</tbody>';
       $('tableCaption').textContent='Simulated clock hours are phase proxies, not predictions of melatonin peak time.';
       $('lightNote').textContent='Representative short-sleep day (02:00–07:00). DLS dims at 23:00. Two long-sleep nights per week are 23:00–07:00 and dim at 20:00. Sleep is modeled as zero eye exposure.';
+      const adjustedContrast=-.91;
+      $('baselineComparison').textContent=`The groups differed before the mission: SLS 4.24 h, DLS 3.69 h. Their descriptive mean changes are +1.98 and +1.07 h, a change contrast of −0.91 h. Against that alternative descriptive quantity, this simulation differs by ${fmt(Math.abs(r.delta-adjustedContrast)*60,1)} min. This is not a paired reanalysis or a causal estimate.`;
+      $('sensitivityPanel').hidden=false;
+      const scenarios=[{label:'Shorter intrinsic period',tau:23.8,location:'L1'},{label:'Default reconstruction',tau:24.2,location:'L1'},{label:'Longer intrinsic period',tau:24.6,location:'L1'},{label:'Alternative habitat level',tau:24.2,location:'L2'}];
+      $('sensitivityTable').innerHTML='<thead><tr><th>Fixed scenario</th><th>τ (h)</th><th>Level</th><th>DLS − SLS (h)</th></tr></thead><tbody>'+scenarios.map(s=>{const delta=s.tau===tau&&s.location===location?r.delta:E.benchmark(s).delta;return `<tr><td>${s.label}</td><td>${fmt(s.tau,1)}</td><td>${s.location}</td><td>${fmt(delta,3)}</td></tr>`;}).join('')+'</tbody>';
     }else{
       const days=Number($('days').value),colors={static:'#91a8ba',dynamic:'#5ce9ee',late:'#f8c27a'},names={static:'Static',dynamic:'Dynamic',late:'Late bright'};
       const trajectories=Object.keys(colors).map(p=>{
@@ -79,6 +84,7 @@ function draw(){
       $('resultTable').innerHTML='<thead><tr><th>Schedule</th><th>Final phase change (h)</th></tr></thead><tbody>'+trajectories.map(s=>`<tr><td>${names[s.name]}</td><td>${s.points.length?fmt(s.points.at(-1)[1],3):'Unavailable'}</td></tr>`).join('')+'</tbody>';
       $('tableCaption').textContent='Relative model phase; not measured human sleep.';
       $('lightNote').textContent='Illustrative day: 07:00 wake, 23:00 lights off. These values are not NASA lighting prescriptions.';
+      $('sensitivityPanel').hidden=true;
     }
     lightingChart(mode,location,profile);$('export').disabled=false;
     $('error').textContent='';

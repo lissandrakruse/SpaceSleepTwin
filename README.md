@@ -24,6 +24,15 @@ See [methods and limitations](research/HERA_BENCHMARK.md) and the
 [executed Kaggle-compatible notebook](research/spacesleeptwin_hera_benchmark.ipynb).
 Run engine and UI-handler checks with `node tests/test_simulator.cjs`.
 
+## Prospective evaluation
+
+The [working evaluation protocol](research/VALIDATION_PROTOCOL.md) separates
+prediction, intervention and transfer to space, with future independent-data
+endpoints, baselines, participant-level analysis and failure criteria. It was
+written after inspecting the known HERA target and is not preregistered.
+The interface also reports intrinsic-period/exposure sensitivity and the
+descriptive baseline-phase contrast, rather than relying on one close match.
+
 ## Scientific limitations
 
 The Forger99 component is mechanistic but not individually calibrated or validated
