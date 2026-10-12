@@ -132,3 +132,13 @@ melEDI substitution is an unvalidated numerical input sensitivity, not a
 physiologically validated spectral comparison. No optimum is established.
 See robustness_hera.py and hera_robustness.json; the notebook includes executed
 outputs. The proposed H4 request addendum is LSDA_H4_ADDENDUM.md.
+
+
+## Absolute phase and alignment
+
+[Premission calibration analysis](HERA_ALIGNMENT.md) fits offsets using premission
+group means only, then assesses known mission means. Separate-group predictions
+are 5.7952/3.9161 h, with errors 0.4248/0.8439 h for SLS/DLS. A common-offset
+alternative predicts both means inside the window, failing the observed SLS
+category. This exposes mapping and calibration dependence rather than validating
+absolute phase. The assumed-prior Monte Carlo is not individual calibration.

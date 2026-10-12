@@ -115,3 +115,13 @@ remain exploratory development evidence, not future independent evaluation.
 [H4 addendum](LSDA_H4_ADDENDUM.md) compares incremental prediction gains for
 measured phase and latency, conditional on exposure availability. It is a draft
 addition to reconcile with the full LSDA request, not a submitted request.
+
+
+## Alignment objective and calibration limits
+
+[Absolute alignment analysis](HERA_ALIGNMENT.md) implements circular distance
+and target-window membership. A useful individual decision requires a target
+defined before simulation, validated marker mapping and uncertainty estimated
+from actual individual premission measurements. The current synthetic
+Monte Carlo uses assumed distributions and cannot supply that posterior.
+The researcher reports H4 incorporated in the complete unsent LSDA draft.

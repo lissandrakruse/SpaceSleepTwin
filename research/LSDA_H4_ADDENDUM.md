@@ -1,9 +1,9 @@
 # Proposed H4 addendum for a NASA LSDA research-data request
 
-Status: ready-to-incorporate draft; not sent, registered or approved. The full
-previous request and its three original hypotheses were not located, so H4 is
-a proposed label to reconcile with the complete document. Do not replace the
-prior hypotheses or imply that this addendum has already been incorporated.
+Status: standalone hypothesis wording. The researcher states that H4 and its
+required records have been incorporated into the complete LSDA draft request.
+The full request remains a draft and has not been sent. This file is not the
+complete request and does not document submission, registration or approval.
 
 ## Proposed hypothesis
 
